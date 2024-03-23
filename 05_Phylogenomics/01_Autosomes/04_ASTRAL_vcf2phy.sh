@@ -22,6 +22,19 @@ python /projects/mjolnir1/people/crq857/Geneflow_Dogs/bin/vcf2phylip/vcf2phylip.
 
 #X chro
 
+Doing now: 
+
+- Running X chromosome with all admixed wolves (including Pakistan and Ladakh wolves) 
+- Rerun autosomes without admixed wolves because I accidently included a wolf from Tajikistan
+- Get posterior probabilities of Autosomal
+- Rerun autosomal tree with all wolves (including Pakistan and Ladakh wolves)
+- Make D statistic figure
+- Make EPAS1 figure - just haplotypes
+- revise paper and make final supplemental figures 
+- Make final supplemental tables 
+- Make final script github
+
+
 #!/usr/bin/env bash
 #SBATCH --job-name=ASTRAL
 #SBATCH -c 1
