@@ -17,4 +17,5 @@ I ran two separate analyses for inferring the autosomal phylogeny. These were (1
 - Run IQtree on each of the phy files -> [05_ASTRAL_runIQtree.sh](/05_Phylogenomics/01_Autosomes/05_ASTRAL_runIQtree.sh)
     - I then wrote an individual script to do `cat *treefile > alltreefiles.txt` to have a list of all final treefiles to run ASTRAL
 - Run ASTRAL on iqtree output -> [06_ASTRAL_runASTRAL.sh](/05_Phylogenomics/01_Autosomes/06_ASTRAL_runASTRAL.sh)
-
+    - There are different outputs:
+         - the `-q` option will give estimates of the branch length and local posterior support for each branch. Local posterior support probabilities are computed based on the gene tree quartet frequencies. The probability refers to the probability the branch is the true branch given the set of gene trees. 
