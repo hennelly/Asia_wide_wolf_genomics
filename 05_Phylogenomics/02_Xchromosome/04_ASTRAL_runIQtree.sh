@@ -9,8 +9,8 @@
 
 #conda activate /projects/mjolnir1/apps/conda/python-3.5.6
 cd /projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/phyfiles_chrX_March2024
-cat  *phy > listfileschrX.txt_phy.txt
+ls  *phy > listfileschrX.txt_phy.txt
 
 PHY=$(sed "${SLURM_ARRAY_TASK_ID}q;d" /projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/phyfiles_chrX_March2024/listfileschrX.txt_phy.txt)
 
-/home/crq857/bin/iqtree-1.6.12-Linux/bin/iqtree -s  /projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/phyfiles/${PHY} -bb 1000 -nt AUTO
+/home/crq857/bin/iqtree-1.6.12-Linux/bin/iqtree -s  /projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/phyfiles_chrX_March2024/${PHY} -bb 1000 -nt AUTO
