@@ -20,6 +20,6 @@ I ran two separate analyses for inferring the autosomal phylogeny. These were (1
     - There are different outputs:
          - the `-q` option will give estimates of the branch length and local posterior support for each branch. Local posterior support probabilities are computed based on the gene tree quartet frequencies. The probability refers to the probability the branch is the true branch given the set of gene trees. 
 
-scp -r crq857@mjolnirhead01fl.unicph.domain:/home/crq857/projects/Chapter2/scripts_Dec/full_Feb8_branchannotate.tre ~/Desktop
+scp -r crq857@mjolnirhead01fl.unicph.domain:/home/crq857/projects/Chapter2/scripts_Dec/out_autosomes.tre ~/Desktop
 
 
