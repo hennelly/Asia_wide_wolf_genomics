@@ -14,7 +14,6 @@ PHY=$(sed "${SLURM_ARRAY_TASK_ID}q;d" /projects/mjolnir1/people/crq857/Chapter2/
 /home/crq857/bin/iqtree-1.6.12-Linux/bin/iqtree -s  /projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/phyfiles/${PHY} -bb 1000 -nt AUTO
 
 
-/projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/phyfiles_autosomes_all_March2024
 
-01_ASTRAL_autosomes_vcf2phy.sh
+
 
