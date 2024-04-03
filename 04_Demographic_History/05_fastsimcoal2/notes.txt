@@ -1,0 +1,56 @@
+NOTE: For SFS analyses you should
+#        have a VCF filtered based on depth of coverage (DP>10), 
+#        but also discarding regions with very high coverage and 
+#        with excess heterozygosity across all individuals,
+#        as those could be due to mapping errors in repetitive or structural variants, 
+#        including duplicated regions, discarding sites with low mapping quality.
+#        NOTE: you should not have a MAF filter, as SFS is very sensitive
+#        to rare variants!
+
+# REQUIRED FILES:
+# - vcffile
+#   	 VCF file. 
+#        
+# - indpopinfo 
+#        Text file with two columns with individual ID and corresponding POP
+#
+# - Rscripts
+#    - getMeanLimitsDP.r 
+#        Script that reads the genotype (GT) and (DP) fields from a VCF
+#        and outputs the median DP and the limits of DP per individual.
+#        This will be done for just the individuals in the IndInfoFile.
+#    - createBED_hwe.r 
+# 	Script that reads files with Hardy-Weinberg equilibrium results
+# 	with the format from VCFTOOLS and outputs BED file with the sites that
+# 	deviate from Hardy-Weinberg, showing an heterozygosity excess
+#    - utilfunctions.r
+#	script with definition of functions used by getMeanLimitsDP.r and createBED_hwe.r
+
+You can modify the settings in the SETTINGS section of ProcessVCF.sh.
+
+#######################################################################
+# 2 - SETTINGS 
+#######################################################################
+# These could be modified to change the settings of the analysis
+# tag for VCF file (vcf file with format "vcffile".vcf.gz)
+vcffile="yourvcfWithMissingData";
+# tag for the indIDpop file (file with two columns with the ID of individuals and corresponding population)
+indidpop="IndPop.txt"; 
+# minimum DP per genotype
+mincoverage=10;
+# minimum DP per individual (in relation to individual mean DP, e.g. 0.5 means that it is 50% of the mean DP)
+minindpd=0.5;
+# maximum DP per individual (in relation to individual mean DP, e.g. 2 means that it is twice the mean DP)
+maxindpd=2.0;
+# tag for the population (this will be used in resulting files)
+poptag="filtered";
+# The script can be run at different regions, defined in BED files (e.g. coding, non-coding, etc.)
+# tag of the region ("all" means that all SNPs are considered)
+region="all";
+# proportion of missing data per site (across all individuals) allowed (all sites with missing data per site > ms_site are removed)
+ms_site=0.5;
+
+
+
+
+
