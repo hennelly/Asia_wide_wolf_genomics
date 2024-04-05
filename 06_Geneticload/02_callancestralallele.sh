@@ -40,40 +40,6 @@ vcftools --vcf ${OUTx}.recode.vcf --indv AndeanFox --recode --recode-INFO-all --
 
 
 
-#above 4x in the original file
-SNPvcf=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_geneticload_WOLVES_ID_noheader.vcf
-VCF=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_geneticload_ID.vcf
-OUT=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_geneticload_ancetral
-
-#create snplist
-awk '{ print $3 }' ${SNPvcf} > /projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/snp.list
-
-SNPS=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/snp.list
-OUTd=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/Dhole
-OUTa=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/Andeanfox
-
-#keep only snps in focal wolf pop
-vcftools --vcf ${VCF} --snps ${SNPS} --recode --recode-INFO-all --out ${OUT}
-
-#vcf for Dhole
-vcftools --vcf ${OUT}.recode.vcf --indv Dhole_BerlinZoo --recode --recode-INFO-all --out ${OUTd}
-
-#vcf for Andean fox 
-vcftools --vcf ${OUT}.recode.vcf --indv AndeanFox --recode --recode-INFO-all --out ${OUTa}
-
-
-#Then I need to filter for keep reads above 4x in the Andean fox and Dhole vcfs. 
-OUTd=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/Dhole
-OUTa=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/Andeanfox
-
-vcftools --vcf ${OUTd}.recode.vcf --minD 4 --recode --recode-INFO-all --out ${OUTd}_minD4
-vcftools --vcf ${OUTa}.recode.vcf --minD 4 --recode --recode-INFO-all --out ${OUTa}_minD4
-
-#extract SNPlist from both. Choose sites that are found in both. 
-
-
-
-
 
 
 
