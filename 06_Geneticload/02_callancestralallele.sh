@@ -13,7 +13,7 @@ VCF=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/Autos
 OUT=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/Geneticload_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_maxmiss1_minD4
 KEEP=/home/crq857/projects/Chapter2/scripts_geneticload/keep_geneticload.txt
 
-vcftools --vcf ${VCF} --minD 4 --keep ${KEEP} --max-missing 1 --recode --recode-INFO-all --out ${OUT}
+vcftools --vcf ${VCF} --minDP 4 --keep ${KEEP} --max-missing 1 --recode --recode-INFO-all --out ${OUT}
 
 KEEPwolf=/home/crq857/projects/Chapter2/scripts_geneticload/keep_geneticloadw.txt
 OUTw=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/Geneticload_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_maxmiss1_minD4_onlywolf
