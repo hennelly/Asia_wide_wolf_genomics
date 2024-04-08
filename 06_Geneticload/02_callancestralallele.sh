@@ -31,11 +31,6 @@ OUTx=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/Gene
 #keep only snps in focal wolf pop
 vcftools --vcf ${OUT}.recode.vcf --snps ${SNPS} --recode --recode-INFO-all --out ${OUTx}
 
-#vcf for Dhole
-vcftools --vcf ${OUTx}.recode.vcf --indv Dhole_BerlinZoo --recode --recode-INFO-all --out ${OUTd}
-
-#vcf for Andean fox 
-vcftools --vcf ${OUTx}.recode.vcf --indv AndeanFox --recode --recode-INFO-all --out ${OUTa}
 
 
 
