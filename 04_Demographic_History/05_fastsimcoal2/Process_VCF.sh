@@ -17,9 +17,11 @@
 # 1 - LOAD PROGRAMS
 #######################################################################
 module load perl
+module load gsl/2.5
 module load vcftools
 module load gcc/11.2.0
 module load R 
+module load gsl/2.5
 module load bcftools
 module load libdeflate
 module load htslib
@@ -31,9 +33,9 @@ module load htslib
 #######################################################################
 # These could be modified to change the settings of the analysis
 # tag for VCF file (vcf file with format "vcffile".vcf.gz)
-vcffile="YourVCF50percentMissingData";
+vcffile="All_Combined.samtools.WithIDs";
 # tag for the indIDpop file (file with two columns with the ID of individuals and corresponding population)
-indidpop="IndPop.txt"; 
+indidpop="popfile.txt"; 
 # minimum DP per genotype
 mincoverage=10;
 # minimum DP per individual (in relation to individual mean DP, e.g. 0.5 means that it is 50% of the mean DP)
