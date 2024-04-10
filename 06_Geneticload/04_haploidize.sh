@@ -6,6 +6,7 @@
 #SBATCH -o /home/crq857/projects/reproductivegenes/slurmout/hapd.out
 #SBATCH -e /home/crq857/projects/reproductivegenes/slurmout/hapd.err
 
+
 ## pseudo haploidize vcf files (i had to create a python virtual environment with specific dependencies but might just be our server) ##
 gunzip /projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK_fsc/Dhole.vcf.gz
 gunzip /projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK_fsc/Andeanfox.vcf.gz
