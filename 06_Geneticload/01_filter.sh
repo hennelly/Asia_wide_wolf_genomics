@@ -21,12 +21,21 @@ KEEP=/home/crq857/projects/Chapter2/scripts_geneticload/keep_geneticload.txt
 vcftools --vcf ${VCF} --minDP 4 --keep ${KEEP} --max-missing 1 --recode --recode-INFO-all --out ${OUT}
 
 KEEPwolf=/home/crq857/projects/Chapter2/scripts_geneticload/keep_geneticloadw.txt
-OUTw=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/Geneticload_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_maxmiss1_minD4_onlywolf
+OUTw=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/Geneticload_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_maxmiss1_minD4_onlywolf_Apr10
 
-vcftools --vcf ${OUT}.recode.vcf --keep ${KEEPwolf} --minDP 10 --maxDP 60 --mac 2 --non-ref-ac-any 1 --recode --recode-INFO-all --out ${OUTw}
+vcftools --vcf ${OUT}.recode.vcf --keep ${KEEPwolf} --max-missing 1 --minDP 10 --maxDP 60 --mac 2 --non-ref-ac-any 1 --recode --recode-INFO-all --out ${OUTw}
+
+#Add snp id
+module load perl
+module load gsl/2.5
+module load bcftools
+SNPLIST=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/Geneticload_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_maxmiss1_minD4_onlywolf_Apr10.recode.vcf 
+OUT2=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/Geneticload_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_maxmiss1_minD4_onlywolf_Apr10_id.vcf 
+bcftools annotate --set-id '%CHROM\_%POS' ${SNPLIST} -o ${OUT2}
 
 #create snplist
-awk '{ print $3 }' ${OUTw}.recode.vcf > /projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/snp.list
+OUT2=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/Geneticload_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_maxmiss1_minD4_onlywolf_Apr10_id.vcf 
+awk '{ print $3 }' ${OUT2}.vcf > /projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/snp.list
 
 #extract SNPs
 SNPS=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/snp.list
