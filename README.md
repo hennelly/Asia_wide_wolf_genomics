@@ -1,6 +1,8 @@
 # Asia_wide_wolf_genomics
 Scripts for manuscript 
 
+ssh crq857@mjolnirgate.unicph.domain
+
 
 #!/usr/bin/env bash
 #SBATCH --job-name=NGSRelate
