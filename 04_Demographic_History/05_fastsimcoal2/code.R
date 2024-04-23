@@ -96,10 +96,10 @@ rm(tgendata_original)
 dp <- dp[,commonind$indexretainvcf]
 
 # Plot the distribution of DP per individual (for selected individuals)
-pdf(file=paste(returnfile_tag, "_missingdata.pdf",sep=""), width=12, height=5)
-par(mfrow=c(1,1))
-boxplot(dp)
-dev.off()
+#pdf(file=paste(returnfile_tag, "_missingdata.pdf",sep=""), width=12, height=5)
+#par(mfrow=c(1,1))
+#boxplot(dp)
+#dev.off()
 
 # Get the mean and median DP per individual
 meandp_ind <- colMeans(dp, na.rm=T);
