@@ -34,6 +34,15 @@ module load angsd
 
 angsd -i ${BAM} -dofasta 1 -doCounts 1 -out ${OUT}
 
+# index fasta 
+
+module load samtools 
+
+samtools faidx /projects/mjolnir1/people/crq857/Chapter2/08_Ancientgenome/AndeanFox.CanFam31.fa.gz
+
+
+
+
 #### MAKE PERFECT FASTA FROM HIGH COVERAGE BAM ####
 #!/usr/bin/env bash
 #SBATCH --job-name=Dstat
