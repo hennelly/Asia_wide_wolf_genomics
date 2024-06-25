@@ -31,16 +31,13 @@ BAM=/projects/mjolnir1/people/fck245/proj_c2/AllBams/AndeanFox.CanFam31.realigne
 OUT=/projects/mjolnir1/people/crq857/Chapter2/08_Ancientgenome/AndeanFox.CanFam31
 
 module load angsd
-
 angsd -i ${BAM} -dofasta 1 -doCounts 1 -out ${OUT}
 
 # index fasta 
 
 module load samtools 
-
-samtools faidx /projects/mjolnir1/people/crq857/Chapter2/08_Ancientgenome/AndeanFox.CanFam31.fa.gz
-
-
+gunzip  /projects/mjolnir1/people/crq857/Chapter2/08_Ancientgenome/AndeanFox.CanFam31.fa.gz
+samtools faidx /projects/mjolnir1/people/crq857/Chapter2/08_Ancientgenome/AndeanFox.CanFam31.fa
 
 
 #### MAKE PERFECT FASTA FROM HIGH COVERAGE BAM ####
@@ -97,3 +94,49 @@ ANC=/projects/mjolnir1/people/crq857/Chapter2/08_Ancientgenome/AndeanFox.CanFam3
 module load angsd
 
 angsd -doAbbababa2 1 -bam ${BAMLIST} -sizeFile ${SIZE} -doCounts 1 -out ${OUT} -anc ${ANC} -useLast 1 -minQ 20 -minMapQ 30 -p 1
+
+
+
+install.packages("pracma", lib="/home/crq857/projects/Chapter2/scripts_June2024")
+library("pracma", lib.loc="/home/crq857/projects/Chapter2/scripts_June2024")
+install.packages("data.table", lib="/home/crq857/projects/Chapter2/scripts_June2024")
+library("data.table", lib.loc="/home/crq857/projects/Chapter2/scripts_June2024")
+
+library(data.table)
+
+
+ln -s estAvgError.R DSTAT
+
+#!/usr/bin/env bash
+#SBATCH --job-name=Dstat
+#SBATCH -c 1
+#SBATCH --time 1:00:00
+#SBATCH --mem-per-cpu 1G
+#SBATCH -o /home/crq857/projects/Chapter2/slurmout/angsd_ancient_calc.out
+#SBATCH -e /home/crq857/projects/Chapter2/slurmout/angsd_ancient_calc.err
+
+
+module load gcc/13.2.0
+module load openjdk/20.0.0
+module load R
+
+library("pracma", lib.loc="/home/crq857/projects/Chapter2/scripts_June2024")
+Rscript DSTAT angsdFile="/projects/mjolnir1/people/crq857/Chapter2/08_Ancientgenome/angsdout_June2024" out="result" sizeFile=/home/crq857/projects/Chapter2/files_June2024/sizeFile.size errFile=errorList.error nameFile=popNames.name
+
+
+errorList.error
+
+Rscript DSTAT angsdFile="/projects/mjolnir1/people/crq857/Chapter2/08_Ancientgenome/angsdout_June2024" out="result" sizeFile=/home/crq857/projects/Chapter2/files_June2024/sizeFile.size errFile=errorList.error nameFile=popNames.name
+
+
+NorwayMW005
+IranwolfSRR12009567
+CGG32_Ancientwolf
+IndianwolfBH123
+Xinjiang_SRR20326483
+Iberianwolf
+Andeanfox
+
+
+scp -r crq857@mjolnirgate.unicph.domain:/home/crq857/projects/Chapter2/scripts_June2024/result.TransRem.txt ~/Desktop
+/home/crq857/projects/Chapter2/scripts_June2024/result.TransRem.txt
