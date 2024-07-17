@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #SBATCH --job-name=iqtree
 #SBATCH -c 1
-#SBATCH --time 00:40:00
-#SBATCH --mem-per-cpu 1G
+#SBATCH --time 11:40:00
+#SBATCH --mem-per-cpu 10G
 #SBATCH -o /home/crq857/projects/Chapter2/slurmout/lowrecombination_vcf2phy.out
 #SBATCH -e /home/crq857/projects/Chapter2/slurmout/lowrecombination_vcf2phy.err
 
