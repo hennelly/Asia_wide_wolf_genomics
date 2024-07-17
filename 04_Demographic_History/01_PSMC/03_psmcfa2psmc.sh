@@ -24,3 +24,19 @@ psmc -p "1+1+1+1+25*2+4+6" -r5 -t15 -N25 -o ${OUTDIR}/${PSMCFA}_1_1_1_1.psmc ${D
 
 
 
+#!/usr/bin/env bash
+#SBATCH --job-name=PSMC
+#SBATCH -c 1
+#SBATCH --time 12:00:00
+#SBATCH --mem-per-cpu 1G
+#SBATCH -o /home/crq857/projects/Chapter2/slurmout/PSMC_psmc_BH123_correction.out
+#SBATCH -e /home/crq857/projects/Chapter2/slurmout/PSMC_psmc_BH123_correction.err
+
+DIR=/projects/mjolnir1/people/crq857/Chapter2/04_Demographichistory/PSMC/psmcfa
+OUTDIR=/projects/mjolnir1/people/crq857/Chapter2/04_Demographichistory/PSMC/psmc
+
+module load psmc
+
+psmc -p "4+25*2+4+6" -r5 -t15 -N25 -o ${OUTDIR}/Indianwolf_BH123_final_autosomes_4.psmc ${DIR}/Indianwolf_BH123_final_autosomes.psmcfa
+psmc -p "2+2+25*2+4+6" -r5 -t15 -N25 -o ${OUTDIR}/Indianwolf_BH123_final_autosomes_2_2.psmc ${DIR}/Indianwolf_BH123_final_autosomes.psmcfa
+psmc -p "1+1+1+1+25*2+4+6" -r5 -t15 -N25 -o ${OUTDIR}/Indianwolf_BH123_final_autosomes_1_1_1_1.psmc ${DIR}/Indianwolf_BH123_final_autosomes.psmcfa
