@@ -27,3 +27,5 @@ OUTDIR=/projects/mjolnir1/people/crq857/Chapter2/06_Datasets/
 
 python /projects/mjolnir1/people/crq857/Geneflow_Dogs/bin/vcf2phylip/vcf2phylip.py -i ${VCF} --output-folder ${OUTDIR} --output-prefix Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAl_lowrecombination -o Dhole_BerlinZoo
 python /projects/mjolnir1/people/crq857/Geneflow_Dogs/bin/vcf2phylip/vcf2phylip.py -i ${VCF_noadmix} --output-folder ${OUTDIR} --output-prefix Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAl_lowrecombination_noadmix_Pak -o Dhole_BerlinZoo
+
+
