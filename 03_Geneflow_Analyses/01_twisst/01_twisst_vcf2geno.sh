@@ -18,3 +18,12 @@ OUTDIR=/projects/mjolnir1/people/crq857/Chapter2/03_GeneflowAnalyses/twisst/geno
 #conda activate /projects/mjolnir1/apps/conda/numpy-1.21.2
 ## Convert to Geno
 python3 /projects/mjolnir1/people/crq857/bin/genomics_general/VCF_processing/parseVCF.py -i ${DIR}/gatk_${CHR}_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_final.recode.vcf --skipIndels | gzip > ${OUTDIR}/gatk_${CHR}_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9.final.geno.gz
+
+# X chromosome 
+XCHR=/group/ctbrowngrp2/hennelly/hennelly/Redwolf/files_May/Asianwolves_gatk_chrX_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9.vcf
+OUT=/group/ctbrowngrp2/hennelly/hennelly/Redwolf/files_May/Asianwolves_gatk_chrX_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9.geno.gz
+
+python3 /projects/mjolnir1/people/crq857/bin/genomics_general/VCF_processing/parseVCF.py -i ${XCHR} --skipIndels | gzip > ${OUT}
+
+
+
