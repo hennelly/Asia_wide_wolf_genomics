@@ -21,20 +21,6 @@ VCF=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/Autos
 REMOVE=/home/crq857/projects/Chapter2/files/ASTRAL_remove_admix.txt
 OUT=/projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/VCFs_July2024/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAl_nodogs_noLadakhPakistanTajWestAsia
 
-#X chromosome - all samples except dogs
-VCF=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/gatk_chrX_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9.recode.vcf.gz
-REMOVE=/home/crq857/projects/Chapter2/files/ASTRAL_removedogs.txt
-OUT=/projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/VCFs_July2024/chrX_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAl_nodogs
-
-vcftools --gzvcf ${VCF} --remove ${REMOVE} --recode --recode-INFO-all --out ${OUT}
-
-#X chromosome -  no Pakistan, Ladakh, Tajikistan, West Asia, no dogs
-VCF=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/gatk_chrX_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9.recode.vcf.gz
-REMOVE=/home/crq857/projects/Chapter2/files/ASTRAL_remove_admix.txt
-OUT=/projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/VCFs_July2024/chrX_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAl_nodogs_noLadakhPakistanTajWestAsia
-
-vcftools --gzvcf ${VCF} --remove ${REMOVE} --recode --recode-INFO-all --out ${OUT}
-
 
 
 
