@@ -31,34 +31,3 @@ Wolf_Norway_MW005       Wolf_Russia_SRR20326388 Wolf_Tibetan_CAN32      Andeanfo
 
 
 
-#!/usr/bin/env bash
-#SBATCH --job-name=Dstat
-#SBATCH -c 1
-#SBATCH --time 11:10:00
-#SBATCH --mem-per-cpu 100G
-#SBATCH -o /home/crq857/projects/Chapter2/slurmout_Oct/Dstat_Africanwolf3run3test.out
-#SBATCH -e /home/crq857/projects/Chapter2/slurmout_Oct/Dstat_Africanwolf3run3test.err
-
-/projects/mjolnir1/people/crq857/Geneflow_Dogs/bin/AdmixTools/src/qpDstat -p /home/crq857/projects/Chapter2/parfiles/z_forAfrican_runtest.par > /projects/mjolnir1/people/crq857/Chapter2/03_GeneflowAnalyses/Dstat/output/z_forAfrican_restJulytest_logfile
-
-
-
-genotypename:  /projects/mjolnir1/people/crq857/Chapter2/03_GeneflowAnalyses/Dstat/files/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss1_Dstat.eigenstratgeno
-snpname: /projects/mjolnir1/people/crq857/Chapter2/03_GeneflowAnalyses/Dstat/files/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss1_Dstat.snp
-indivname: /projects/mjolnir1/people/crq857/Chapter2/03_GeneflowAnalyses/Dstat/files/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss1_Dstat.ind
-popfilename:   /home/crq857/projects/Chapter2/parfiles/listgroup_African_Julytest.txt
-## optional parameter  
-f4mode:   YES 
-printsd:  YES
-## default NO 
-## f4 statistics not D-stats are computed
-inbreed: YES
-
-
-
-Wolf_Norway_MW005       Wolf_Germany_MW055      Africanwolf     Andeanfox 
-Wolf_Norway_MW005       Indianwolf_BH124        Africanwolf     Andeanfox 
-Wolf_Norway_MW005       Indianwolf_BH126        Africanwolf     Andeanfox 
-Wolf_Norway_MW005       Indianwolf_BH6  Africanwolf     Andeanfox 
-Wolf_Norway_MW005       Indianwolf_SRR13985171  Africanwolf     Andeanfox 
-
