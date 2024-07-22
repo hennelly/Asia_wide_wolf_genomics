@@ -57,7 +57,5 @@ samtools mpileup -f /projects/mjolnir1/people/crq857/Chapter2/ref/canFam31.fasta
 
 
 
-#Then reduce the file 
-
 
 
