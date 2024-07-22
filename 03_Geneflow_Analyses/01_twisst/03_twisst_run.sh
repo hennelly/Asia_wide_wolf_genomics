@@ -30,6 +30,3 @@ python3 /home/hennelly/Redwolf/bin/twisst/twisst.py -t ${DIR}/gatk_chrX_filtered
 python3 /home/hennelly/Redwolf/bin/twisst/twisst.py -t ${DIR}/gatk_chrX_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9.final_July21.phyml.trees.gz -w ${OUTDIR}/gatk_chrX_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9.final_July21.phyml_twisst_EastAsia -g Tibetan -g EastAsia -g Russia -g Europe -g Andeanfox --outgroup Andeanfox --method complete --groupsFile ${popfileTib}
 
 
-
-
-
