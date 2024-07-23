@@ -47,13 +47,16 @@ chrX=/home/hennelly/Redwolf/files/FINISHED_WHOLEGENOMEbelow0.2_FINAL_copy_bedtoo
 grep -v "chrX" ${OUTREC} > ${chrX}
 
 grep -v "chrX"  /home/hennelly/Redwolf/files/FINISHED_WHOLEGENOMEbelow0.2_FINAL_copy_bedtools_final.bed >   /home/hennelly/Redwolf/files/FINISHED_AUTOSOMESbelow0.2_FINAL_copy_bedtools_final.bed
+grep -v "chrX"  /home/hennelly/Redwolf/files/FINISHED_WHOLEGENOMEabove2_May10_2021_new_tabbedfinal_bedtools_tabbed.bed >   /home/hennelly/Redwolf/files/FINISHED_WHOLEGENOMEabove2_May10_2021_new_tabbedfinal_bedtools_tabbed.bed_final
+
+
 
 #bedtools intercept 
 module load bedtools2/2.30.0
 OUTFINAL=/home/hennelly/Redwolf/files/FINISHED_WHOLEGENOMEbelow0.2_FINAL_copy_bedtools_locations_windows_twisst.bed 
 bedtools intersect -a ${chrX} -b ${OUT2} >  ${OUTFINAL}
 
-bedtools intersect -a  /home/hennelly/Redwolf/files/FINISHED_AUTOSOMESbelow0.2_FINAL_copy_bedtools_final.bed2 -b /group/ctbrowngrp2/hennelly/hennelly/Asianwolves/phyml/autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9.final.phyml.data_noheader_tabbed_bed >  /group/ctbrowngrp2/hennelly/hennelly/Asianwolves/phyml/autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9.final.phyml.data_noheader_tabbed_bed_intersect_lowrec
+bedtools intersect -a     /home/hennelly/Redwolf/files/FINISHED_WHOLEGENOMEabove2_May10_2021_new_tabbedfinal_bedtools_tabbed.bed_final -b /group/ctbrowngrp2/hennelly/hennelly/Asianwolves/phyml/autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9.final.phyml.data_noheader_tabbed_bed >  /group/ctbrowngrp2/hennelly/hennelly/Asianwolves/phyml/autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9.final.phyml.data_noheader_tabbed_bed_intersect_highrec
 
 #################################################################
 # add row for combining chr and start so I can better interest #
