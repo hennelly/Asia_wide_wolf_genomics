@@ -23,11 +23,7 @@ q <- p +
         shape = 21) +
   scale_fill_gradient2(low = "orangered", mid = "gold", high = "darkslategray3", midpoint = mean(0)) 
 
-r <- q  +
-  theme(line = element_blank(),
-        text = element_blank(),
-        title = element_blank()) +
-        scale_x_continuous(limits = c(10, 180))+
+r <- q  + scale_x_continuous(limits = c(10, 180))+
         scale_y_continuous(limits = c(20, 80)) 
 r
 
