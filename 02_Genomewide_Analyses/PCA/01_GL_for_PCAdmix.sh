@@ -28,3 +28,6 @@ angsd -GL 1 \
   -P 10 \
   -out ${OUTDIR}/Asianwolves_PCAdmix_Dec26_${CHR} \
   -r ${CHR}:
+
+
+## Then I combined the outputs by removing the header of each chromosome and combining with cat
