@@ -8,13 +8,13 @@
 #SBATCH --array=1-500%10
 
 BEDFILE=$(sed "${SLURM_ARRAY_TASK_ID}q;d" /projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/bedfiles_chrX/listfiles.txt)
-DIR=/projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/input_chrX_July2024_all
-VCF=/projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/VCFs_July2024/chrX_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAl_nodogs.recode.vcf 
+DIR=/projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/input_chrX_July2024_all_withNA
+VCF=/projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/VCFs_July2024/chrX_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAl_nodogs_withNA.recode.vcf 
 
 module load bedtools
 
 #All except dogs
-bedtools intersect -a ${VCF} -b /projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/bedfiles_chrX/${BEDFILE} > ${DIR}/ChrX_allwolves_March2024_chrX_${BEDFILE}_allexceptdogsJuly2024.vcf
+bedtools intersect -a ${VCF} -b /projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/bedfiles_chrX/${BEDFILE} > ${DIR}/ChrX_allwolves_March2024_chrX_${BEDFILE}_allexceptdogsJuly2024_withNA.vcf
 
 VCF_noadmix=/projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/VCFs_July2024/chrX_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAl_nodogs_noLadakhPakistanTajWestAsia.recode.vcf
 DIR_noadmix=/projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/input_chrX_July2024_noadmix
