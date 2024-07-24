@@ -30,4 +30,3 @@ angsd -GL 1 \
   -r ${CHR}:
 
 
-## Then I combined the outputs by removing the header of each chromosome and combining with cat
