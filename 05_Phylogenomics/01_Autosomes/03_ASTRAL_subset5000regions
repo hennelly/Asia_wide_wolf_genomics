@@ -8,9 +8,21 @@
 #SBATCH --array=10-1000%10
 
 BEDFILE=$(sed "${SLURM_ARRAY_TASK_ID}q;d" /projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/bedfiles/listfiles.txt)
-DIR=/projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/July2024_input_autosomes_noadmix
-VCF=/projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/VCFs_July2024/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAl_nodogs_noLadakhPakistanTajWestAsia.recode.vcf
+DIR=/projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/x_FINAL_July262024_input_autosomes_nodogswithNA
+VCF=/projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/xFINAL_VCFs_July262024/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAl_nodogs_withNAwolves.recode.vcf
 
 module load bedtools
 
-bedtools intersect -a ${VCF} -b /projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/bedfiles/${BEDFILE} > ${DIR}/Autosomes_noadmixwolves_${BEDFILE}.vcf
+# no dogs with NA wolves
+bedtools intersect -a ${VCF} -b /projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/bedfiles/${BEDFILE} > ${DIR}/July262024_Autosomes_nodogs_withNAwolves_${BEDFILE}.vcf
+
+# no admix wolves 
+
+BEDFILE=$(sed "${SLURM_ARRAY_TASK_ID}q;d" /projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/bedfiles/listfiles.txt)
+DIR=/projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/x_FINAL_July262024_input_autosomes_noadmix
+VCFnoadmix=/projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/xFINAL_VCFs_July262024/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAl_nodogs_noNAwolvesLadakhPakistanTajWestAsia.recode.vcf
+
+module load bedtools
+
+# no admix wolves
+bedtools intersect -a ${VCFnoadmix} -b /projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/bedfiles/${BEDFILE} > ${DIR}/July262024_Autosomes_noadmixwolves_${BEDFILE}.vcf
