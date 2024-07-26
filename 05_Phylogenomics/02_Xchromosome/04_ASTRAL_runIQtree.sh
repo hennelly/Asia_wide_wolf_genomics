@@ -13,15 +13,15 @@
 
 PHY=$(sed "${SLURM_ARRAY_TASK_ID}q;d" /projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/xFINAL_chrX_July262026_phyfiles_nodogs_withNA/FINAL_listfileschrX.txt_phy.txt)
 
-/home/crq857/bin/iqtree-1.6.12-Linux/bin/iqtree -s  /projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/xFINAL_July26_phyfiles_chrX_nodogswithNA/${PHY} -bb 1000 -nt AUTO
+/home/crq857/bin/iqtree-1.6.12-Linux/bin/iqtree -s  /projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/xFINAL_chrX_July262026_phyfiles_nodogs_withNA/${PHY} -bb 1000 -nt AUTO
 
 ### NO ADMIXED
 
 #cd /projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/phyfiles_chrX_July2024_noadmix
 #ls  *phy > FINAL_listfileschrX_noadmix.txt_phy.txt
 
-PHY=$(sed "${SLURM_ARRAY_TASK_ID}q;d" /projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/phyfiles_chrX_July2024_noadmix/FINAL_listfileschrX_noadmix.txt_phy.txt)
+PHY=$(sed "${SLURM_ARRAY_TASK_ID}q;d" /projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/xFINAL_chrX_July262026_phyfiles_noadmix/FINAL_listfileschrX_noadmix.txt_phy.txt)
 
-/home/crq857/bin/iqtree-1.6.12-Linux/bin/iqtree -s  /projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/xFINAL_July26_phyfiles_chrX_July2024_noadmix/${PHY} -bb 1000 -nt AUTO
+/home/crq857/bin/iqtree-1.6.12-Linux/bin/iqtree -s  /projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/xFINAL_chrX_July262026_phyfiles_noadmix/${PHY} -bb 1000 -nt AUTO
 
 
