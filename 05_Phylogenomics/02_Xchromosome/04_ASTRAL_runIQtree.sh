@@ -15,13 +15,13 @@ PHY=$(sed "${SLURM_ARRAY_TASK_ID}q;d" /projects/mjolnir1/people/crq857/Chapter2/
 
 /home/crq857/bin/iqtree-1.6.12-Linux/bin/iqtree -s  /projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/phyfiles_chrX_July2024_all/${PHY} -bb 1000 -nt AUTO
 
-### NO ADMIX 
+### NO ADMIXED
 
 #cd /projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/phyfiles_chrX_July2024_noadmix
-#ls  *phy > listfileschrX.txt_phy.txt
+#ls  *phy > listfileschrX_noadmix.txt_phy.txt
 
-PHY=$(sed "${SLURM_ARRAY_TASK_ID}q;d" /projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/phyfiles_chrX_July2024_noadmix/filelist_July2024chrX_noadmix_phy.txt)
+PHY=$(sed "${SLURM_ARRAY_TASK_ID}q;d" /projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/phyfiles_chrX_July2024_noadmix/listfileschrX_noadmix.txt_phy.txt)
 
-/home/crq857/bin/iqtree-1.6.12-Linux/bin/iqtree -s  /projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/phyfiles_chrX_July2024_all/${PHY} -bb 1000 -nt AUTO
+/home/crq857/bin/iqtree-1.6.12-Linux/bin/iqtree -s  /projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/phyfiles_chrX_July2024_noadmix/${PHY} -bb 1000 -nt AUTO
 
 
