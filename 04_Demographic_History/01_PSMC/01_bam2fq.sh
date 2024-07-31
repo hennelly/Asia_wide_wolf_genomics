@@ -9,10 +9,10 @@
 
 ## Bam files were only for the autosomes
 echo "My SLURM_ARRAY_TASK_ID: " $SLURM_ARRAY_TASK_ID
-BAM=$(sed "${SLURM_ARRAY_TASK_ID}q;d" /home/crq857/projects/Chapter2/list_Dec/psmc_lc_list.txt | cut -f1)
-DIR=$(sed "${SLURM_ARRAY_TASK_ID}q;d" /home/crq857/projects/Chapter2/list_Dec/psmc_lc_list.txt | cut -f2)
-MIND=$(sed "${SLURM_ARRAY_TASK_ID}q;d" /home/crq857/projects/Chapter2/list_Dec/psmc_lc_list.txt | cut -f3)
-MAXD=$(sed "${SLURM_ARRAY_TASK_ID}q;d" /home/crq857/projects/Chapter2/list_Dec/psmc_lc_list.txt | cut -f4)
+BAM=$(sed "${SLURM_ARRAY_TASK_ID}q;d" /home/crq857/projects/Chapter2/list_Dec/psmc_lc_list_Shanxi.txt | cut -f1)
+DIR=$(sed "${SLURM_ARRAY_TASK_ID}q;d" /home/crq857/projects/Chapter2/list_Dec/psmc_lc_list_Shanxi.txt | cut -f2)
+MIND=$(sed "${SLURM_ARRAY_TASK_ID}q;d" /home/crq857/projects/Chapter2/list_Dec/psmc_lc_list_Shanxi.txt | cut -f3)
+MAXD=$(sed "${SLURM_ARRAY_TASK_ID}q;d" /home/crq857/projects/Chapter2/list_Dec/psmc_lc_list_Shanxi.txt | cut -f4)
 OUTDIR=/projects/mjolnir1/people/crq857/Chapter2/04_Demographichistory/PSMC/fq_files
 REF=/projects/mjolnir1/people/crq857/Chapter2/ref/canFam31.fasta
 
@@ -22,3 +22,5 @@ module load samtools
 module load bcftools
 
 bcftools mpileup -q 20 -Q 20 -C 50 -f ${REF} ${DIR}/${BAM}  | bcftools call -c | vcfutils.pl vcf2fq -d ${MIND} -D ${MAXD} | gzip > ${OUTDIR}/${BAM}.fq.gz 
+
+
