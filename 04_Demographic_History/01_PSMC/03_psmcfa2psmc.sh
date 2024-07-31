@@ -22,5 +22,13 @@ module load psmc
 psmc -p "1+1+1+1+25*2+4+6" -r5 -t15 -N25 -o ${OUTDIR}/${PSMCFA}_1_1_1_1.psmc ${DIR}/${PSMCFA}
 
 
+psmc -p "1+1+1+1+25*2+4+6" -r5 -t15 -N25 -o ${OUTDIR}/Shanxi1Wolf_1_1_1_1.psmc ${DIR}/Shanxi1Wolf.psmcfa
+
+
+Shanxi1Wolf.psmcfa
+
+
+
+
 
 
