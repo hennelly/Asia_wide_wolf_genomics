@@ -14,11 +14,11 @@ OUTDIR=/projects/mjolnir1/people/crq857/Chapter2/04_Demographichistory/PSMC/psmc
 
 module load psmc
 
-psmc -p "4+25*2+4+6" -r5 -t15 -N25 -o ${OUTDIR}/${PSMCFA}_4.psmc ${DIR}/${PSMCFA}
+#psmc -p "4+25*2+4+6" -r5 -t15 -N25 -o ${OUTDIR}/${PSMCFA}_4.psmc ${DIR}/${PSMCFA}
 
 ## Also try other combinations of input to see if it impacts the PSMC curve 
 
-psmc -p "2+2+25*2+4+6" -r5 -t15 -N25 -o ${OUTDIR}/${PSMCFA}_2_2.psmc ${DIR}/${PSMCFA}
+#psmc -p "2+2+25*2+4+6" -r5 -t15 -N25 -o ${OUTDIR}/${PSMCFA}_2_2.psmc ${DIR}/${PSMCFA}
 psmc -p "1+1+1+1+25*2+4+6" -r5 -t15 -N25 -o ${OUTDIR}/${PSMCFA}_1_1_1_1.psmc ${DIR}/${PSMCFA}
 
 
