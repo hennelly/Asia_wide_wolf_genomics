@@ -8,6 +8,17 @@
 
 module load psmc
 
+## Shanxi 
+LOW=Chinese_CAN6.CanFam31_12x_1_1_1_1.psmc
+HIGH=Chinese_CAN6.CanFam31_1_1_1_1.psmc
+DIR=/projects/mjolnir1/people/crq857/Chapter2/04_Demographichistory/PSMC/plot_Shanxi
+
+psmc_plot.pl -u 4.5e-09 -g 4.4 -R -M "sample1=0.14" ${DIR}/${LOW}_u4.5e9g4.4_FNR0.14  ${DIR}/${LOW}
+psmc_plot.pl -u 4.5e-09 -g 4.4 -R -M "sample1=0.16" ${DIR}/${LOW}_u4.5e9g4.4_FNR0.16  ${DIR}/${LOW}
+psmc_plot.pl -u 4.5e-09 -g 4.4 -R -M "sample1=0.12" ${DIR}/${LOW}_u4.5e9g4.4_FNR0.12  ${DIR}/${LOW}
+psmc_plot.pl -u 4.5e-09 -g 4.4 -R -M  ${DIR}/${HIGH}_u4.5e9g4.4_high  ${DIR}/${HIGH}
+
+
 
 FILE=Kyrgyz_WLF180.CanFam31.bam_autosomes.bam_4
 FILE2=Kyrgyz_WLF180.CanFam31.bam_autosomes.bam_2_2
