@@ -6,6 +6,11 @@
 #SBATCH -o /home/crq857/projects/Geneflow_Dogs/slurmout/astral_auto_byspecies_atry2ll_feb9_annotate.out
 #SBATCH -e /home/crq857/projects/Geneflow_Dogs/slurmout/astral_auto_byspecies_atry2ll_feb9_annotate.err
 
+#991 trees
+cd /projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/x_FINAL_July262024_phy_autosomes_nodogswithNA_noEth
+cat *treefile > listtreefiles_nodogswithNA_more_noEth_autosomes.txt
+
+
 TREE=alltreefiles_autosomes.treefile
 
 java -jar /projects/mjolnir1/people/crq857/Chapter2/bin/ASTER/ASTRAL/astral.5.7.8.jar --branch-annotate 1 -i ${TREE} -o full_Feb9_try2_autosomes_branchannotate.tre
