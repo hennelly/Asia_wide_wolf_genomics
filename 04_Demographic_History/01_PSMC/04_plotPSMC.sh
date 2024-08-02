@@ -18,6 +18,7 @@ psmc_plot.pl -u 4.5e-09 -g 4.4 -R -M "sample1=0.16" ${DIR}/${LOW}_u4.5e9g4.4_FNR
 psmc_plot.pl -u 4.5e-09 -g 4.4 -R -M "sample1=0.12" ${DIR}/${LOW}_u4.5e9g4.4_FNR0.12  ${DIR}/${LOW}
 psmc_plot.pl -u 4.5e-09 -g 4.4 -R -M  ${DIR}/${HIGH}_u4.5e9g4.4_high  ${DIR}/${HIGH}
 
+psmc_plot.pl -u 4.5e-09 -g 4.4 -R  Chinese_CAN6_u4.5e9g4.4_high  Chinese_CAN6.CanFam31_1_1_1_1.psmc
 
 
 FILE=Kyrgyz_WLF180.CanFam31.bam_autosomes.bam_4
@@ -168,7 +169,14 @@ psmc_plot.pl -u 4.5e-09 -g 4.4 -R -M "sample1=0.05" ${OUTDIR}/${FILE2}_u4.5e9g4.
 psmc_plot.pl -u 4.5e-09 -g 4.4 -R -M "sample1=0.05" ${OUTDIR}/${FILE3}_u4.5e9g4.4_FNR0.14  ${DIR}/${FILE3}.psmc
 
 
+scp -r crq857@mjolnirgate.unicph.domain:/projects/mjolnir1/people/crq857/Chapter2/04_Demographichistory/PSMC/plot_Shanxi/Chinese_CAN6_u4.5e9g4.4_high.0.txt ~/Desktop
 
+
+Chinese_CAN6.CanFam31_12x_1_1_1_1.psmc_u4.5e9g4.4_FNR0.12.0.txt
+Chinese_CAN6.CanFam31_12x_1_1_1_1.psmc_u4.5e9g4.4_FNR0.14.0.txt
+Chinese_CAN6.CanFam31_12x_1_1_1_1.psmc_u4.5e9g4.4_FNR0.16.0.txt
+Chinese_CAN6_u4.5e9g4.4_high.0.txt
+/projects/mjolnir1/people/crq857/Chapter2/04_Demographichistory/PSMC/plot_Shanxi
 
 
 
