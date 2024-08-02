@@ -8,7 +8,7 @@
 
 #conda activate /projects/mjolnir1/apps/conda/python-3.5.6
 
-PHY=/projects/mjolnir1/people/crq857/Chapter2/06_Datasets/Xchr_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAl_lowrecombination_noadmixPakWestAsia.min4.phy
+PHY=/projects/mjolnir1/people/crq857/Chapter2/06_Datasets/2gatk_chrX_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_lowrecombination_noEthnodogs.min4.phy
 PHYnoad=/projects/mjolnir1/people/crq857/Chapter2/06_Datasets/Xchr_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAl_lowrecombination_noadmixPak.min4.phy
 /home/crq857/bin/iqtree-1.6.12-Linux/bin/iqtree -s ${PHY} -bb 1000 -nt AUTO -m MFP
 /home/crq857/bin/iqtree-1.6.12-Linux/bin/iqtree -s ${PHYnoad} -bb 1000 -nt AUTO -m MFP
