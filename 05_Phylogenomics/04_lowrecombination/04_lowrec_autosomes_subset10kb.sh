@@ -14,7 +14,11 @@ NUMBER=$(sed "${SLURM_ARRAY_TASK_ID}q;d" /home/crq857/projects/Chapter2/scripts_
 FILE=/projects/mjolnir1/people/crq857/Chapter2/06_Datasets/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAL_lowrecombination_AUG14.recode.vcf
 OUTDIR=/projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/Aug14_lowrecautosomes/input
 
-awk 'NR >= $LINE1 && NR <= $LINE2' ${FILE} > ${OUTDIR}/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAL_lowrecombination_AUG14_${NUMBER}
+grep "#" ${FILE} > header_autorec.txt
+grep -v "#" ${FILE} > /projects/mjolnir1/people/crq857/Chapter2/06_Datasets/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAL_lowrecombination_AUG14_noheader.vcf
 
-head -n ${LINE1} ${FILE} > ${OUTDIR}/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAL_lowrecombination_AUG14_${NUMBER}
+
+FILE2=/projects/mjolnir1/people/crq857/Chapter2/06_Datasets/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAL_lowrecombination_AUG14_noheader.vcf
+
+head -n ${LINE1} ${FILE2} > ${OUTDIR}/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAL_lowrecombination_AUG14_${NUMBER}
 tail -n ${LINE2} ${OUTDIR}/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAL_lowrecombination_AUG14_${NUMBER} > ${OUTDIR}/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAL_lowrecombination_AUG14_${NUMBER}_final
