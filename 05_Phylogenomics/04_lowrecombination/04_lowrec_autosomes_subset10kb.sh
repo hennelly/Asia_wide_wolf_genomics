@@ -20,7 +20,13 @@ grep -v "#" ${FILE} > /projects/mjolnir1/people/crq857/Chapter2/06_Datasets/Auto
 
 FILE2=/projects/mjolnir1/people/crq857/Chapter2/06_Datasets/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAL_lowrecombination_AUG14_noheader.vcf
 
-head -n ${LINE1} ${FILE2} > ${OUTDIR}/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAL_lowrecombination_AUG14_${NUMBER}
-tail -n ${LINE2} ${OUTDIR}/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAL_lowrecombination_AUG14_${NUMBER} > ${OUTDIR}/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAL_lowrecombination_AUG14_${NUMBER}_final
+sed -n "${LINE1},${LINE2}p;${LINE2}q" ${FILE2} > ${OUTDIR}/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAL_lowrecombination_AUG14_${NUMBER}
 
 cat header_autorec.txt ${OUTDIR}/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAL_lowrecombination_AUG14_${NUMBER}_final > ${OUTDIR}/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAL_lowrecombination_AUG14_${NUMBER}_final_header.vcf
+
+
+
+
+
+
+
