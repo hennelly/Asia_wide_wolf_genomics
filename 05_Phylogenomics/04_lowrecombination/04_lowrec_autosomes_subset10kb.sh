@@ -26,6 +26,12 @@ cat header_autorec.txt ${OUTDIR}/Autosomes_filtered_noindels_noastrick_diploid_m
 
 
 # take random 1million SNPs 
+FILE2=/projects/mjolnir1/people/crq857/Chapter2/06_Datasets/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAL_lowrecombination_AUG15_noheader.vcf
+FILE3=/projects/mjolnir1/people/crq857/Chapter2/06_Datasets/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAL_lowrecombination_AUG15_noheader_1million.vcf
+take off header 
+
+shuf -n 1000000 ${FILE2} > ${FILE3}
+
 
 
 
