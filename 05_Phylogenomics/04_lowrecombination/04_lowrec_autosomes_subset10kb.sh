@@ -25,6 +25,8 @@ sed -n "${LINE1},${LINE2}p;${LINE2}q" ${FILE2} > ${OUTDIR}/Autosomes_filtered_no
 cat header_autorec.txt ${OUTDIR}/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAL_lowrecombination_AUG14_${NUMBER}_final > ${OUTDIR}/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAL_lowrecombination_AUG14_${NUMBER}_final_header.vcf
 
 
+# take random 1million SNPs 
+
 
 
 
