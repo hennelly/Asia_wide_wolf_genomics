@@ -11,11 +11,11 @@
 LINE1=$(sed "${SLURM_ARRAY_TASK_ID}q;d" /home/crq857/projects/Chapter2/scripts_PhylogeneticsJuly/lowrec_Autosomes_ranges.txt  | awk '{print $1}')
 LINE2=$(sed "${SLURM_ARRAY_TASK_ID}q;d" /home/crq857/projects/Chapter2/scripts_PhylogeneticsJuly/lowrec_Autosomes_ranges.txt  | awk '{print $2}')
 NUMBER=$(sed "${SLURM_ARRAY_TASK_ID}q;d" /home/crq857/projects/Chapter2/scripts_PhylogeneticsJuly/lowrec_Autosomes_ranges.txt  | awk '{print $3}')
-FILE=/projects/mjolnir1/people/crq857/Chapter2/06_Datasets/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAL_lowrecombination_AUG14.recode.vcf
+FILE=/projects/mjolnir1/people/crq857/Chapter2/06_Datasets/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAL_lowrecombination_AUG15.vcf.recode.vcf
 OUTDIR=/projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/Aug14_lowrecautosomes/input
 
 grep "#" ${FILE} > header_autorec.txt
-grep -v "#" ${FILE} > /projects/mjolnir1/people/crq857/Chapter2/06_Datasets/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAL_lowrecombination_AUG14_noheader.vcf
+grep -v "#" ${FILE} > /projects/mjolnir1/people/crq857/Chapter2/06_Datasets/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAL_lowrecombination_AUG15_noheader.vcf
 
 
 FILE2=/projects/mjolnir1/people/crq857/Chapter2/06_Datasets/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAL_lowrecombination_AUG14_noheader.vcf
