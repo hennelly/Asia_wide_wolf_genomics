@@ -31,7 +31,10 @@ FILE3=/projects/mjolnir1/people/crq857/Chapter2/06_Datasets/Autosomes_filtered_n
 take off header 
 
 shuf -n 1000000 ${FILE2} > ${FILE3}
+#Add header 
+FILE3=/projects/mjolnir1/people/crq857/Chapter2/06_Datasets/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAL_lowrecombination_AUG15_noheader_1million.vcf
 
+cat header_autorec.txt ${FILE3} > /projects/mjolnir1/people/crq857/Chapter2/06_Datasets/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAL_lowrecombination_AUG15_header_1million.vcf
 
 
 
