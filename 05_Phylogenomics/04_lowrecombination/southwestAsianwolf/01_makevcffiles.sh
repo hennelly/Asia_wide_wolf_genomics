@@ -96,6 +96,31 @@ PHY=2gatk_chrX_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_l
 
 
 
+#!/usr/bin/env bash
+#SBATCH --job-name=lowrec
+#SBATCH -c 1
+#SBATCH --time 11:30:00
+#SBATCH --mem-per-cpu 1G
+#SBATCH -o /home/crq857/projects/Chapter2/slurmout/auto.out
+#SBATCH -e /home/crq857/projects/Chapter2/slurmout/auto.err
+
+VCF=/projects/mjolnir1/people/crq857/Chapter2/06_Datasets/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAL_lowrecombination_AUG15_header_1million.vcf
+DIR=/projects/mjolnir1/people/crq857/Chapter2/06_Datasets/
+
+module load perl
+module load vcftools
+
+#Remove Pakistan wolves 
+
+python /projects/mjolnir1/people/crq857/Geneflow_Dogs/bin/vcf2phylip/vcf2phylip.py -i ${VCF} --output-folder ${DIR} --output-prefix Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAL_lowrecombination_AUG15_header_1million
+ -o AndeanFox
+
+PHY=Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAL_lowrecombination_AUG15_header_1million.min4.phy
+/home/crq857/bin/iqtree-1.6.12-Linux/bin/iqtree -s ${DIR}/${PHY} -bb 1000 -nt AUTO -m MFP
+
+
+
+
 
 
 
