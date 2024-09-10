@@ -1,9 +1,39 @@
 Extract command lines
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 cd /projects/mjolnir1/people/crq857/Chapter2/03_GeneflowAnalyses/FEEMS/finaldataset
+screen
+srun -N 1 -c 1 --mem-per-cpu=64g -t 1-0:0:0 --pty bash -i
+conda activate /projects/mjolnir1/apps/conda/ipython-8.7.0
+ipython
+import sys
+sys.path.append("/projects/mjolnir1/apps/modules/")
+import feems
+# base
+import numpy as np
+import pkg_resources
+from sklearn.impute import SimpleImputer #no module sklearn, had to do  pip install scikit-learn
+#pip install pandas_plink
+from pandas_plink import read_plink #no read_plink, had to pip install pandas_plink
+#pip install statsmodels
+import statsmodels.api as sm
+#pip install matplotlib
+import matplotlib.pyplot as plt
+#pip install cartopy
+import cartopy.crs as ccrs
+
+
+
+ 
+
+
+
+
+
 
 conda activate /projects/mjolnir1/people/gnr216/a-software/conda_env/feems
 
+conda activate /projects/mjolnir1/apps/conda/feems-1.0.0
+/projects/mjolnir1/apps/modules/feems/1.0.0
 screen
 srun -N 1 -c 1 --mem-per-cpu=64g -t 1-0:0:0 --pty bash -i
 conda activate /projects/mjolnir1/apps/conda/ipython-8.7.0
@@ -16,6 +46,8 @@ conda activate /projects/mjolnir1/apps/conda/ipython-8.7.0
 ipython
 import feems 
 
+import sys
+sys.path.append("/projects/mjolnir1/apps/modules/")
 
 ### ERROR FOR FEEMS 
 AttributeError: module 'numpy' has no attribute 'int'.
