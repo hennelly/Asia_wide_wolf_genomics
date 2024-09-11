@@ -1,5 +1,47 @@
-conda create -n=feems_e python=3.8.3 
+Extract command lines
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cd /projects/mjolnir1/people/crq857/Chapter2/03_GeneflowAnalyses/FEEMS/finaldataset
+screen
+srun -N 1 -c 1 --mem-per-cpu=64g -t 1-0:0:0 --pty bash -i
+
+FINAL
+
+
+#conda create -n=feems_e python=3.8.3 
 conda activate feems_e
+ipython
+
+pip install ipython #ipython
+
+!conda install scikit-sparse=0.4.4  #install
+!conda install cartopy=0.18.0
+
+
+import numpy as np
+import pkg_resources
+from sklearn.impute import SimpleImputer 
+from pandas_plink import read_plink
+import statsmodels.api as sm
+import matplotlib.pyplot as plt
+import cartopy.crs as ccrs
+
+But when I get to importing specific program within feems, I can't seem to get it to work. For example: 
+from feems.utils import prepare_graph_inputs
+from feems import SpatialGraph, Viz
+from feems.cross_validation import run_cv
+
+
+
+/projects/mjolnir1/people/crq857/Chapter2/03_GeneflowAnalyses/FEEMS/finaldataset/Autosomes_onlyEurasianwolves_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_LDprune.coord
+
+scp -r crq857@mjolnirgate.unicph.domain:/projects/mjolnir1/people/crq857/Chapter2/03_GeneflowAnalyses/FEEMS/finaldataset/Autosomes_onlyEurasianwolves_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_LDprune.coord ~/Desktop
+
+
+
+
+
+
+
 
 module load geos/
 
