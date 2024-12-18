@@ -17,4 +17,9 @@
 - Run bcftools ROH -> [05.bcftoolsROH.sh](/04_Demographic_History/03_ROH/05.bcftoolsROH.sh)
 - Pull out RG -> [06.pulloutRG.sh](/04_Demographic_History/03_ROH/06.pulloutRG.sh)
 - Plotting the results -> [07.Plot_CummulativeROH.R](/04_Demographic_History/03_ROH/07.Plot_CummulativeROH.R)
+
+
+## Inbreeding coefficient 
+- NGSRelate to use genotype likelihoods ->  [01_NGSrelate_setup.sh](/04_Demographic_History/04_InbreedingCoefficient/01_NGSrelate_setup.sh) + [02_NGSrelate_combine.sh](/04_Demographic_History/04_InbreedingCoefficient/02_NGSrelate_combine.sh) + [03_NGSrelate_run.sh](/04_Demographic_History/04_InbreedingCoefficient/03_NGSrelate_run.sh)
+
   
