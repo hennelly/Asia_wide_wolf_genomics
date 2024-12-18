@@ -1,8 +1,7 @@
 # Alignment and SNP Calling
 
 ## 1.0 Alignment to the Dog Genome
- - We used the program Paleomix to align each raw read to the canfam3.1 genome -  [01_Adapter_trimming.sh](/01_Alignment/01_Adapter_trimming.sh)
- - Alignment to the Dog Genome using bwa - [02_Alignment.sh](/01_Alignment/02_Alignment.sh)
+ - We used the program Paleomix to align each raw read to the canfam3.1 genome -  [01_Alignment_paleomix.sh](/01_Alignment_Postprocessing/01_Alignment_paleomix.sh)
  
 ## 2.0 Subset GBS coordinates on whole genome sequence data 
 - First, I need to merge all the GBS bam files to grab all coordinates, then convert this merged GBS bam file to a bed file and sort the bed file - [03_mergebams.sh](/01_Alignment/03_mergeGBSbams.sh)
