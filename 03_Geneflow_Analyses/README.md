@@ -7,3 +7,9 @@
  - Run twisst ->  [03_twisst_KU.sh](/03_Geneflow_Analyses/01_twisst/03_twisst_KU.sh) 
  - Plot twisst in R-> [04_results_plot.R](/03_Geneflow_Analyses/01_twisst/04_results_plot.R)
 - Overlap twisst windows with recombination rate variation -> 06_overlaptwisst_results_centralAsia.sh](/03_Geneflow_Analyses/01_twisst/06_overlaptwisst_results_centralAsia.sh) 
+
+## FEEMS for quantifying effective migration surface 
+
+ - FEEMS pipeline, which was difficult to install [01_FEEMS_new.FINALsh](/03_Geneflow_Analyses/02_FEEMS/01_FEEMS_new.FINALsh) 
+
+\
