@@ -5,13 +5,12 @@ Scripts for manuscript "Complex genomic ancestry in southern regions and drivers
 - Meta-data for the 11 newly sequenced canids, which consisted of 1 dog from Pakistan, whole genomes of 2 wolves from Kyrgyzstan, and 8 reduced representation sequences from Pakistan is avaliable here: [Samplelist](/00_SamplesMetadata/Metadata_Hennelly_etal_2023.xlsx)
 
 ## 01_Alignment_SNPCalling
-- adaptor trimming -> [01_Adapter_trimming.sh](/01_Alignment/01_Adapter_trimming.sh)
-- alignment to the dog genome -> [02_Alignment.sh](/01_Alignment/02_Alignment.sh)
-- subset WGS bams to coordinates of GBS -> [03_mergebams.sh](/01_Alignment/03_mergeGBSbams.sh) + [04_subsetWGSonGBS.sh](/01_Alignment/04_subsetWGSonGBS.sh)
+- Paleomix pipeline for mapping to canfam3.1 genome -> [01_Alignment_paleomix.sh](/01_Alignment_Postprocessing/01_Alignment_paleomix.sh)
+- GATK pipeline -> [02_GATK_haplotypecaller.sh](/01_Alignment_Postprocessing/02_GATK_haplotypecaller.sh) + [03_GATK_GenomicsDBImport.sh](/01_Alignment_Postprocessing/03_GATK_GenomicsDBImport.sh) +  [04_GATK_GenotypeGVCFs.sh](/01_Alignment_Postprocessing/04_GATK_GenotypeGVCFs.sh)
   
 ## 02_Genome-wide_Summary_Analyses
-- PCA -> [01_ANGSD_GL_forPCAngsd.sh](/02_Genome_wide_Summary/01_ANGSD_GL_forPCAngsd.sh) + [02_runPCAngsd.sh](/02_Genome_wide_Summary/02_runPCAngsd.sh) + [03_plotPCA.sh](/02_Genome_wide_Summary/03_plotPCA.sh)
-- Individual admixture proportions -> [04_ANGSD_for_GL_NGAdmix.sh](/02_Genome_wide_Summary/04_ANGSD_for_GL_NGAdmix.sh) + [05_runNGSadmix.sh](/02_Genome_wide_Summary/05_runNGSadmix.sh) + [06_plot_NGSadmix.sh](/02_Genome_wide_Summary/06_plot_NGSadmix.sh)
+- PCA -> [01_GL_for_PCAdmix.sh](/02_Genomewide_Analyses/PCA/01_GL_for_PCAdmix.sh) + [02_merge_GL.sh](/02_Genomewide_Analyses/PCA/02_merge_GL.sh) + [03_run_PCAdmix.sh](/02_Genomewide_Analyses/PCA/03_run_PCAdmix.sh) + [04_plotPCA.R](/02_Genomewide_Analyses/PCA/04_plotPCA.R)
+- Individual admixture proportions -> [01_NGSAdmix_getGL.sh](/02_Genomewide_Analyses/Individual_Admixture_Prop/01_NGSAdmix_getGL.sh) + [02_NGSAdmix_merge.sh](/02_Genomewide_Analyses/Individual_Admixture_Prop/02_NGSAdmix_merge.sh)  + [03_NGSAdmix_run.sh](/02_Genomewide_Analyses/Individual_Admixture_Prop/03_NGSAdmix_run.sh) + [04_NGSAdmix_plot.R](/02_Genomewide_Analyses/Individual_Admixture_Prop/04_NGSAdmix_plot.R) and [05_NGSAdmix_plot_on_map.R]
 
 ## 03_Geneflow
 - D statistics -> [01_makeancestralfasta.sh](/03_GeneFlow/01_makeancestralfasta.sh) + [02_doabbababa.sh](/03_GeneFlow/02_doabbababa.sh) + [03_dojackknife.sh](/03_GeneFlow/03_dojackknife.sh) +  [04_plot_Dstat_figure.R](/03_GeneFlow/04_plot_Dstat_figure.R)
