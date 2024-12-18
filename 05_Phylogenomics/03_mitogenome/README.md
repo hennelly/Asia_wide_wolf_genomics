@@ -1,5 +1,0 @@
-# Extracting the mitogenome
-
-
-
-
