@@ -6,7 +6,6 @@
 ## 2.0 SNP Calling with GATK 
 - First, I used GATK HaplotypeCalling for each bam, with an array to run for each chromosome- [02_GATK_haplotypecaller.sh](/01_Alignment_Postprocessing/02_GATK_haplotypecaller.sh)
 - Second, I ran GenomeDBImport - [03_GATK_GenomicsDBImport.sh](/01_Alignment_Postprocessing/03_GATK_GenomicsDBImport.sh)
-- Lastly, I ran GenotypeGATK - [03_GATK_GenomicsDBImport.sh](/01_Alignment_Postprocessing/03_GATK_GenomicsDBImport.sh)
-## 3.0 Calculate depth of each bam file 
-- [05_depthpersample.sh](/01_Alignment/05_depthpersample.sh)
+- Lastly, I ran GenotypeGVCF by chromosome - [04_GATK_GenotypeGVCFs.sh](/01_Alignment_Postprocessing/04_GATK_GenotypeGVCFs.sh)
+
 
