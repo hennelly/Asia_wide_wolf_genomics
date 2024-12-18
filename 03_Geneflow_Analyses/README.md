@@ -12,4 +12,8 @@
 
  - FEEMS pipeline, which was difficult to install [01_FEEMS_new.FINALsh](/03_Geneflow_Analyses/02_FEEMS/01_FEEMS_new.FINALsh) 
 
-\
+## Dstatistic analysis
+
+- First, we converted an autosomal VCF to eigen format -> [01_Dstat_vcf2ped.sh](/03_Geneflow_Analyses/Dstatistics/01_Dstat_vcf2ped.sh) + [02_Dstat_ped2eigen.sh](/03_Geneflow_Analyses/Dstatistics/02_Dstat_ped2eigen.sh) 
+- Run Dstatistics -> [03_Dstat_run.sh](/03_Geneflow_Analyses/Dstatistics/03_Dstat_run.sh) 
+- Plotting D statistic results in R [04_plotMap_Dstat.R](/03_Geneflow_Analyses/Dstatistics/04_plotMap_Dstat.R) + [04_plot_boxplot.R](/03_Geneflow_Analyses/Dstatistics/04_plot_boxplot.R)
