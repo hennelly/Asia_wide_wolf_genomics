@@ -2,7 +2,7 @@
 
 ## 1.0 Alignment to the Dog Genome
  - We used the program Paleomix to align each raw read to the canfam3.1 genome -  [01_Alignment_paleomix.sh](/01_Alignment_Postprocessing/01_Alignment_paleomix.sh)
- 
+ - The yaml file contains the specific programs and options: [01_example_yaml.yaml](/01_Alignment_Postprocessing/01_example_yaml.yaml) 
 ## 2.0 Subset GBS coordinates on whole genome sequence data 
 - First, I need to merge all the GBS bam files to grab all coordinates, then convert this merged GBS bam file to a bed file and sort the bed file - [03_mergebams.sh](/01_Alignment/03_mergeGBSbams.sh)
 - Second, I will then subset the WGS bam files to match the coordinates within the GBS files - [04_subsetWGSonGBS.sh](/01_Alignment/04_subsetWGSonGBS.sh)
