@@ -13,7 +13,9 @@ Scripts for manuscript "Complex genomic ancestry in southern regions and drivers
 - Individual admixture proportions -> [01_NGSAdmix_getGL.sh](/02_Genomewide_Analyses/Individual_Admixture_Prop/01_NGSAdmix_getGL.sh) + [02_NGSAdmix_merge.sh](/02_Genomewide_Analyses/Individual_Admixture_Prop/02_NGSAdmix_merge.sh)  + [03_NGSAdmix_run.sh](/02_Genomewide_Analyses/Individual_Admixture_Prop/03_NGSAdmix_run.sh) + [04_NGSAdmix_plot.R](/02_Genomewide_Analyses/Individual_Admixture_Prop/04_NGSAdmix_plot.R) and [05_NGSAdmix_plot_on_map.R]
 
 ## 03_Geneflow
-- D statistics -> [01_makeancestralfasta.sh](/03_GeneFlow/01_makeancestralfasta.sh) + [02_doabbababa.sh](/03_GeneFlow/02_doabbababa.sh) + [03_dojackknife.sh](/03_GeneFlow/03_dojackknife.sh) +  [04_plot_Dstat_figure.R](/03_GeneFlow/04_plot_Dstat_figure.R)
+ - Twisst analyses for topology weighting [00_phasing.sh](/03_Geneflow_Analyses/01_twisst/00_phasing.sh) + [01_twisst_vcf2geno.sh](/03_Geneflow_Analyses/01_twisst/01_twisst_vcf2geno.sh) + [02_twisst_geno2phy.sh](/03_Geneflow_Analyses/01_twisst/02_twisst_geno2phy.sh) + [03_twisst_KU.sh](/03_Geneflow_Analyses/01_twisst/03_twisst_KU.sh)  + [04_results_plot.R](/03_Geneflow_Analyses/01_twisst/04_results_plot.R) + [06_overlaptwisst_results_centralAsia.sh](/03_Geneflow_Analyses/01_twisst/06_overlaptwisst_results_centralAsia.sh) 
+- FEEMS -> [01_FEEMS_new.FINALsh](/03_Geneflow_Analyses/02_FEEMS/01_FEEMS_new.FINALsh) 
+- D statistic -> [01_Dstat_vcf2ped.sh](/03_Geneflow_Analyses/Dstatistics/01_Dstat_vcf2ped.sh) + [02_Dstat_ped2eigen.sh](/03_Geneflow_Analyses/Dstatistics/02_Dstat_ped2eigen.sh) + [03_Dstat_run.sh](/03_Geneflow_Analyses/Dstatistics/03_Dstat_run.sh) + [04_plotMap_Dstat.R](/03_Geneflow_Analyses/Dstatistics/04_plotMap_Dstat.R) + [04_plot_boxplot.R](/03_Geneflow_Analyses/Dstatistics/04_plot_boxplot.R)
   
 ## 04_Phylogenetics
 - Infer mitochondrial phylogeny -> [01_beast.sh](/04_Phylogenetics/01_beast.sh) + [02_treeannotator.sh](/04_Phylogenetics/02_treeannotator.sh) 
