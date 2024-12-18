@@ -1,104 +1,27 @@
 # Asia_wide_wolf_genomics
-Scripts for manuscript 
+Scripts for manuscript "Complex genomic ancestry in southern regions and drivers of continental-level genetic diversity in the wolves of Asia"
 
-ssh crq857@mjolnirgate.unicph.domain
+## Sample List 
+- Meta-data for the 11 newly sequenced canids, which consisted of 1 dog from Pakistan, whole genomes of 2 wolves from Kyrgyzstan, and 8 reduced representation sequences from Pakistan is avaliable here: [Samplelist](/00_SamplesMetadata/Metadata_Hennelly_etal_2023.xlsx)
 
+## 01_Alignment_SNPCalling
+- adaptor trimming -> [01_Adapter_trimming.sh](/01_Alignment/01_Adapter_trimming.sh)
+- alignment to the dog genome -> [02_Alignment.sh](/01_Alignment/02_Alignment.sh)
+- subset WGS bams to coordinates of GBS -> [03_mergebams.sh](/01_Alignment/03_mergeGBSbams.sh) + [04_subsetWGSonGBS.sh](/01_Alignment/04_subsetWGSonGBS.sh)
+  
+## 02_Genome-wide_Summary_Analyses
+- PCA -> [01_ANGSD_GL_forPCAngsd.sh](/02_Genome_wide_Summary/01_ANGSD_GL_forPCAngsd.sh) + [02_runPCAngsd.sh](/02_Genome_wide_Summary/02_runPCAngsd.sh) + [03_plotPCA.sh](/02_Genome_wide_Summary/03_plotPCA.sh)
+- Individual admixture proportions -> [04_ANGSD_for_GL_NGAdmix.sh](/02_Genome_wide_Summary/04_ANGSD_for_GL_NGAdmix.sh) + [05_runNGSadmix.sh](/02_Genome_wide_Summary/05_runNGSadmix.sh) + [06_plot_NGSadmix.sh](/02_Genome_wide_Summary/06_plot_NGSadmix.sh)
 
-#!/usr/bin/env bash
-#SBATCH --job-name=NGSRelate
-#SBATCH -c 1
-#SBATCH --time 1-00:00:00
-#SBATCH -c 10   ## number cpus
-#SBATCH --mem=40gb      ## total RAM
-#SBATCH -o /home/crq857/projects/Chapter2/slurmout_Oct/angsd_NGSRelate_%A_%a.out
-#SBATCH -e /home/crq857/projects/Chapter2/slurmout_Oct/angsd_NGSRelate_%A_%a.err
-#SBATCH --array=1-38%10
+## 03_Geneflow
+- D statistics -> [01_makeancestralfasta.sh](/03_GeneFlow/01_makeancestralfasta.sh) + [02_doabbababa.sh](/03_GeneFlow/02_doabbababa.sh) + [03_dojackknife.sh](/03_GeneFlow/03_dojackknife.sh) +  [04_plot_Dstat_figure.R](/03_GeneFlow/04_plot_Dstat_figure.R)
+  
+## 04_Phylogenetics
+- Infer mitochondrial phylogeny -> [01_beast.sh](/04_Phylogenetics/01_beast.sh) + [02_treeannotator.sh](/04_Phylogenetics/02_treeannotator.sh) 
+- Plotting elevation + mtDNA lineage -> [03_plotting_mtDNA_and_elevation.R](/04_Phylogenetics/03_plotting_mtDNA_and_elevation.R) 
+- Plotting mtDNA with map in R -> [04_plotting_mtDNA_on_map.R](/04_Phylogenetics/04_plotting_mtDNA_on_map.R)
 
-CHR=$(sed -n "$SLURM_ARRAY_TASK_ID"p /home/crq857/projects/Geneflow_Dogs/files/chrlist_angsd.txt | awk '{print $1}')
-OUTDIR=/projects/mjolnir1/people/crq857/Chapter2/04_Demographichistory/NSGRelate
-LIST=/home/crq857/projects/Chapter2/list_Sept/bamlist_for_PCAangsd_listDec15.txt
-REF=/projects/mjolnir1/people/crq857/Chapter2/ref/canFam31.fasta
-
-
-/projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/xFINAL_chrX_July262026_input_July2024_nodogs_withNA_more_noEth/FINAL_listfileschrX.txt_phy.txt
-
-
-
-#!/usr/bin/env bash
-#SBATCH --job-name=ASTRAL
-#SBATCH -c 1
-#SBATCH --time 01:40:00
-#SBATCH --mem-per-cpu 1G
-#SBATCH -o /home/crq857/projects/Geneflow_Dogs/slurmout/xxxiqtree_Xchr_run_%A_%a.out
-#SBATCH -e /home/crq857/projects/Geneflow_Dogs/slurmout/xxxiqtree_Xchr_run_%A_%a.err
-#SBATCH --array=1-500%10
-
-#conda activate /projects/mjolnir1/apps/conda/python-3.5.6
-#cd /projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/xFINAL_chrX_July262026_input_July2024_nodogs_withNA_more_noEth
-#ls  *phy > FINAL_listfileschrX.txt_phy.txt
-
-PHY=$(sed "${SLURM_ARRAY_TASK_ID}q;d" /projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/xFINAL_chrX_July262026_phy_July2024_nodogs_withNA_noEth/FINAL_listfileschrX.txt_phy_noEth.txt)
-
-/home/crq857/bin/iqtree-1.6.12-Linux/bin/iqtree -redo  -s  /projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/xFINAL_chrX_July262026_phy_July2024_nodogs_withNA_noEth/${PHY} -bb 1000 -nt AUTO
-
-
-/projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/xFINAL_chrX_July262026_phy_July2024_nodogs_withNA_noEth/FINAL_listfileschrX.txt_phy_noEth.txt
-
-
-
-
-#!/usr/bin/env bash
-#SBATCH --job-name=lowrec
-#SBATCH -c 1
-#SBATCH --time 01:30:00
-#SBATCH --mem-per-cpu 1G
-#SBATCH -o /home/crq857/projects/Chapter2/slurmout/lowrecombinationXchr.out
-#SBATCH -e /home/crq857/projects/Chapter2/slurmout/lowrecombinationXchr.err
-
-
-XSITES=/home/crq857/projects/Chapter2/files/FINISHED_WHOLEGENOMEbelow0.2_FINAL_copy_fixed.bed
-XVCF=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/gatk_chrX_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9.recode.vcf.gz
-XOUTVCF=/projects/mjolnir1/people/crq857/Chapter2/06_Datasets/gatk_chrX_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_lowrecombination
-
-module load perl
-module load vcftools
-
-vcftools --gzvcf ${XVCF} --bed ${XSITES} --out ${XOUTVCF} --recode --keep-INFO-all
-
-REMOVE=/home/crq857/projects/Chapter2/files/July26_taxaremove_onlydogs_badwolves.txt
-OUTVCF=/projects/mjolnir1/people/crq857/Chapter2/06_Datasets/gatk_chrX_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_lowrecombination_noEthnodogs
-
-vcftools --vcf ${XOUTVCF}.recode.vcf --remove ${REMOVE} --out ${OUTVCF} --recode --keep-INFO-all
-
-
-
-
-
-
-
-
-
-
-
-
-module load angsd
-
-angsd -GL 2 \
-  -bam ${LIST} \
-   -ref ${REF} \
-  -checkBamHeaders 0 \
-  -trim 0 -C 50 -baq 1 \
-  -nThreads 10 \
-  -skipTriallelic 1 \
-  -minMapQ 20 -minQ 20 -minInd 88 \
-  -uniqueOnly 1 -remove_bads 1 \
-  -noTrans 1 -doGlf 3 -doMajorMinor 1 -doMaf 1 \
-  -minMaf 0.00001 \
-  -SNP_pval 1e-6 \
-  -P 10 \
-  -out ${OUTDIR}/Asianwolves_NGSRelate_Mar25_${CHR} \
-  -r ${CHR}:
-
+For script-related questions, please email Dr. Lauren Mae Hennelly at lauren.hennelly@sund.ku.dk
 
 
 
