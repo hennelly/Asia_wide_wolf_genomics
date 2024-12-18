@@ -11,4 +11,10 @@
 - Estimate the heterozygosity using ANGSD and genotype likelihoods -> [01_heterozygosity_ANGSD.sh](/04_Demographic_History/02_GeneticDiversity/01_heterozygosity_ANGSD.sh)
 - Map of heterozygosity of wolves -> [02_plot_heterozygosity_on_map.R](/04_Demographic_History/02_GeneticDiversity/02_plot_heterozygosity_on_map.R)
 
+## ROH 
+- adjust recombination map for bcftools roh -> [adjust_geneticmap.sh](/04_Demographic_History/03_ROH/adjust_geneticmap.sh)
+- Prepare dataset -> [03.SubsetandFilterindividuals.sh](/04_Demographic_History/03_ROH/03.SubsetandFilterindividuals.sh) + [03.splitbychr.sh](/04_Demographic_History/03_ROH/03.splitbychr.sh)
+- Run bcftools ROH -> [05.bcftoolsROH.sh](/04_Demographic_History/03_ROH/05.bcftoolsROH.sh)
+- Pull out RG -> [06.pulloutRG.sh](/04_Demographic_History/03_ROH/06.pulloutRG.sh)
+- Plotting the results -> [07.Plot_CummulativeROH.R](/04_Demographic_History/03_ROH/07.Plot_CummulativeROH.R)
   
