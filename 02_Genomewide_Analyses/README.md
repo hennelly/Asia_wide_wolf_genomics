@@ -3,9 +3,10 @@
 ## Principle Component Analyis using Genotype Likelihoods 
 - We used PCangsd (Meisner and Albrecthsen 2018) to inferred the PCA using genotype likelihoods from ANGSD (Korneliussen et al. 2014)
 
- - First we estimated genotype likelihoods using ANGSD [01_ANGSD_GL_forPCAngsd.sh](/02_Genome_wide_Summary/01_ANGSD_GL_forPCAngsd.sh) with keeping reads with least 90% individuals present
- - Run PCAngsd -> [02_runPCAngsd.sh](/02_Genome_wide_Summary/02_runPCAngsd.sh)
- - Plot PCA in R -> [03_plotPCA.sh](/02_Genome_wide_Summary/03_plotPCA.sh)
+ - First we estimated genotype likelihoods using ANGSD by chromosome [01_GL_for_PCAdmix.sh](/02_Genomewide_Analyses/PCA/01_GL_for_PCAdmix.sh) with keeping reads with least 90% individuals present
+ - Merge GL files -> [02_merge_GL.sh](/02_Genomewide_Analyses/PCA/02_merge_GL.sh)
+ - Run PCAngsd -> [03_run_PCAdmix.sh](/02_Genomewide_Analyses/PCA/03_run_PCAdmix.sh)
+ - Plot PCA in R -> [04_plotPCA.R](/02_Genomewide_Analyses/PCA/04_plotPCA.R)
 
 ## Individual Admixture Proportions with NGSadmix
 - we inferred genotype likelihoods using ANGSD and ran NGSadmix (Skotte et al. 2013) assuming K = 2–7 genetic clusters. 
