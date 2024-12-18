@@ -26,7 +26,5 @@ cat <(grep "#" gatk_fsc_chr1.vcf.recode.vcf) <(for number in $(seq 1 1 38); do g
 
 
 
-Wolf_China_SRR20326486
-Wolf_Kyrgyz179
-Wolf__Kyrgyz180
+
 
