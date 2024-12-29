@@ -27,9 +27,7 @@ Scripts for manuscript "Complex genomic ancestry in southern regions and drivers
 - D statistic -> [01_Dstat_vcf2ped.sh](/03_Geneflow_Analyses/Dstatistics/01_Dstat_vcf2ped.sh) + [02_Dstat_ped2eigen.sh](/03_Geneflow_Analyses/Dstatistics/02_Dstat_ped2eigen.sh) + [03_Dstat_run.sh](/03_Geneflow_Analyses/Dstatistics/03_Dstat_run.sh) + [04_plotMap_Dstat.R](/03_Geneflow_Analyses/Dstatistics/04_plotMap_Dstat.R) + [04_plot_boxplot.R](/03_Geneflow_Analyses/Dstatistics/04_plot_boxplot.R)
   
 ## 04_Phylogenetics
-- Infer mitochondrial phylogeny -> [01_beast.sh](/04_Phylogenetics/01_beast.sh) + [02_treeannotator.sh](/04_Phylogenetics/02_treeannotator.sh) 
-- Plotting elevation + mtDNA lineage -> [03_plotting_mtDNA_and_elevation.R](/04_Phylogenetics/03_plotting_mtDNA_and_elevation.R) 
-- Plotting mtDNA with map in R -> [04_plotting_mtDNA_on_map.R](/04_Phylogenetics/04_plotting_mtDNA_on_map.R)
+- Still updating
 
 For script-related questions, please email Dr. Lauren Mae Hennelly at lauren.hennelly@sund.ku.dk
 
