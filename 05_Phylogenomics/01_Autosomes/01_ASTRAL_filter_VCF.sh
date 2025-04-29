@@ -13,9 +13,20 @@ module load vcftools
 
 VCF=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9.recode.vcf.vcf.gz
 REMOVE=/home/crq857/projects/Chapter2/files/July26_taxaremove_onlydogs_badwolves.txt
-OUT=/projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics_Jan2025/FINAL_VCFs_2025/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAl_nodogs_withNAwolves_Jan2025
+OUT=/projects/psg/people/crq857/Chapter2/05_Phylogenomics_Jan2025/FINAL_VCFs_2025/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAl_nodogs_withNAwolves_Jan2025
 
 vcftools --gzvcf ${VCF} --remove ${REMOVE} --recode --recode-INFO-all --out ${OUT}
+
+## Remove additional wolves and the golden jackal from Israel 
+
+VCF=/projects/psg/people/crq857/Chapter2/05_Phylogenomics_Jan2025/FINAL_VCFs_2025/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAl_nodogs_withNAwolves_Jan2025.recode.vcf 
+REMOVE=
+OUT=
+
+Golden_Jackal_Novembre_Israel
+
+/projects/psg/people/crq857/Chapter2/02_GenomewideAnalyses/Beaglefiles_Jan22/
+
 
 #Autosomes - no Pakistan, Ladakh, Tajikistan, West Asia, no dogs
 VCFnoadmix=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9.recode.vcf.vcf.gz
