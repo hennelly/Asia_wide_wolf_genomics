@@ -10,7 +10,7 @@ sbatch --partition=cpuqueue \
 --wrap="/projects/psg/people/crq857/bin2/AdmixTools/src/qpDstat -p /home/crq857/projects/Asianwolves_revision/parfiles/01_GJ_parfile9.par > /projects/psg/people/crq857/Asianwolves_revision/02_Geneflow/01_Dstat/Dstat_Goldenjackal_part9_logfile"
 
 
-
+/projects/psg/people/crq857/Chapter2/02_GenomewideAnalyses/Beaglefiles_Jan22/
 
 #!/usr/bin/env bash
 
@@ -115,7 +115,15 @@ inbreed: YES
 
 
 
-scp -r crq857@mjolnirgate.unicph.domain:/projects/psg/people/crq857/Asianwolves_revision/02_Geneflow/01_Dstat/Dstat_Dog_part9_logfile ~/Desktop
+scp -r crq857@mjolnirgate.unicph.domain:/projects/psg/people/crq857/Chapter2/02_GenomewideAnalyses/Beaglefiles_Jan22/Autosomes_DONE_allcanids_Feb3_NGSAdmix_9.qopt ~/Desktop
+
+
+/projects/psg/people/crq857/Chapter2/02_GenomewideAnalyses/Beaglefiles_Jan22/Autosomes_DONE_allcanids_Feb3_NGSAdmix_7.qopt
+/projects/psg/people/crq857/Chapter2/02_GenomewideAnalyses/Beaglefiles_Jan22/Autosomes_DONE_allcanids_Feb3_NGSAdmix_8.qopt
+/projects/psg/people/crq857/Chapter2/02_GenomewideAnalyses/Beaglefiles_Jan22/Autosomes_DONE_allcanids_Feb3_NGSAdmix_9.qopt
+
+
+
 
 /projects/psg/people/crq857/Asianwolves_revision/02_Geneflow/01_Dstat/Dstat_Dog_part1_logfile
 /projects/psg/people/crq857/Asianwolves_revision/02_Geneflow/01_Dstat/Dstat_Dog_part2_logfile
