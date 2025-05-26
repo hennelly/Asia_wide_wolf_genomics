@@ -15,17 +15,11 @@ module load psmc
 
 psmc -p "1+1+1+1+25*2+4+6" -r5 -t15 -N25 -o ${OUTDIR}/Chinese_CAN6.CanFam31_12x_1_1_1_1.psmc ${DIR}/Chinese_CAN6.CanFam31_12x.psmcfa
 
-
 psmc -p "1+1+1+1+25*2+4+6" -r5 -t15 -N25 -o ${OUTDIR}/Chinese_CAN6.CanFam31_1_1_1_1.psmc ${DIR}/Chinese_CAN6.CanFam31.realigned.bam_autosomes.bam.psmcfa
 
 psmc -p "1+1+1+1+25*2+4+6" -r5 -t15 -N25 -o ${OUTDIR}/Shanxi1Wolf1_1_1_1.psmc ${DIR}/Shanxi1Wolf.psmcfa
 
 
-Shanxi1Wolf.psmcfa
-
-
-
-Shanxi1Wolf.psmcfa
 
 
 
