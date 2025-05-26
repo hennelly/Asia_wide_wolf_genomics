@@ -2,7 +2,7 @@
 Scripts for manuscript "Continent-wide view of genomic diversity and divergence in the wolves of Asia"
 
 ## Sample List 
-- Meta-data for the 20 newly sequenced canids and the full sample list is avaliable here: [Samplelist](/00_SamplesMetadata/Table S1_Metadata.csv)
+- Meta-data for the 20 newly sequenced canids and the full sample list is avaliable here: /00_SamplesMetadata/Table S1_Metadata.csv
 
 ## 01_Alignment_SNPCalling
 - Paleomix pipeline for mapping to canfam3.1 genome -> [01_Alignment_paleomix.sh](/01_Alignment_Postprocessing/01_Alignment_paleomix.sh)
