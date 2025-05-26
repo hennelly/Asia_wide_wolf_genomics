@@ -51,11 +51,6 @@ For script-related questions, please email Dr. Lauren Mae Hennelly at lauren.hen
 
 
 
-/projects/mjolnir1/people/crq857/Chapter2
-
-/projects/psg/people/crq857/Chapter2/ref
-
-
 
 
 
