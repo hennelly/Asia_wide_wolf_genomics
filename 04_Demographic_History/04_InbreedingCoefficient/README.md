@@ -1,1 +1,2 @@
-
+# Inbreeding coefficient with NGSrelate
+We inferred the per-individual inbreeding coefficient (Find) using genotype likelihoods, where the inbreeding coefficient is the probability of identity by descent. We used ANGSD to infer genotype likelihoods and allele frequencies for samples above 4x coverage with the following parameters: -GL 2 -checkBamHeaders 0 -trim 0 -C 50 -baq 1 -skipTriallelic 1 -minMapQ 20 -minQ 20 -minInd 88 -uniqueOnly 1 -remove-bads 1 -noTrans 1 -doGlf 3 -doMajorMinor 1 -doMaf 1 -minMaf 0.0001 -SNP_pval 1e-6. We then used NgsRelate v2 with option -F1 to infer the inbreeding coefficients for each Eurasian wolf individual (Hanghoj et al. 2019).
