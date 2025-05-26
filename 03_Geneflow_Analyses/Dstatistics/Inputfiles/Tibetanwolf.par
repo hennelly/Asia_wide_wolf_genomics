@@ -1,0 +1,10 @@
+genotypename:  /projects/mjolnir1/people/crq857/Chapter2/03_GeneflowAnalyses/Dstat/files/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss1_Dstat.eigenstratgeno
+snpname: /projects/mjolnir1/people/crq857/Chapter2/03_GeneflowAnalyses/Dstat/files/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss1_Dstat.snp
+indivname: /projects/mjolnir1/people/crq857/Chapter2/03_GeneflowAnalyses/Dstat/files/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss1_Dstat.ind
+popfilename:   /home/crq857/projects/Chapter2/parfiles/z_forTibetan_run5.txt
+## optional parameter  
+f4mode:   YES 
+printsd:  YES
+## default NO 
+## f4 statistics not D-stats are computed
+inbreed: YES
