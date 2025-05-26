@@ -1,41 +1,21 @@
 #!/usr/bin/env bash
-#SBATCH --job-name=astral
-#SBATCH -c 1
-#SBATCH --time 1-11:10:00
-#SBATCH --mem-per-cpu 3G
-#SBATCH -o /home/crq857/projects/Chapter2/slurmout/astral_March2024_chrX_nodogs_withNA.out
-#SBATCH -e /home/crq857/projects/Chapter2/slurmout/astral_March2024_chrX_nodogs_withNA.err
+#SBATCH --partition=cpuqueue
+#SBATCH --qos=normal
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=1G
+#SBATCH --array=1-1011%10
+#SBATCH --output=/home/crq857/projects/Asianwolves_revision/slurmout/qAutosomes_astral_%A_%a.out
+#SBATCH --error=/home/crq857/projects/Asianwolves_revision/slurmout/qAutosomes_astral_%A_%a.err
+#SBATCH --time=01:00:00
+
+BEDFILE=$(sed "${SLURM_ARRAY_TASK_ID}q;d" /projects/psg/people/crq857/Chapter2/05_Phylogenomics/bedfiles/listfiles.txt)
+DIR=/projects/psg/people/crq857/Chapter2/05_Phylogenomics/ASTRAL_vcf_more_again
+REMOVE=/projects/psg/people/crq857/Chapter2/05_Phylogenomics/ASTRAL_vcf_more/removelist.txt
 
 module load perl
 module load vcftools
 
-#Autosomes - all samples except dogs
-
-VCF=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9.recode.vcf.vcf.gz
-REMOVE=/home/crq857/projects/Chapter2/files/July26_taxaremove_onlydogs_badwolves.txt
-OUT=/projects/psg/people/crq857/Chapter2/05_Phylogenomics_Jan2025/FINAL_VCFs_2025/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAl_nodogs_withNAwolves_Jan2025
-
-vcftools --gzvcf ${VCF} --remove ${REMOVE} --recode --recode-INFO-all --out ${OUT}
-
-## Remove additional wolves and the golden jackal from Israel 
-
-VCF=/projects/psg/people/crq857/Chapter2/05_Phylogenomics_Jan2025/FINAL_VCFs_2025/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAl_nodogs_withNAwolves_Jan2025.recode.vcf 
-REMOVE=
-OUT=
-
-Golden_Jackal_Novembre_Israel
-
-/projects/psg/people/crq857/Chapter2/02_GenomewideAnalyses/Beaglefiles_Jan22/
-
-
-#Autosomes - no Pakistan, Ladakh, Tajikistan, West Asia, no dogs
-VCFnoadmix=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9.recode.vcf.vcf.gz
-REMOVEnoadmix=/home/crq857/projects/Chapter2/files/July26_taxaremove_onlydogs_admixwolves.txt
-OUTnoadmix=/projects/mjolnir1/people/crq857/Chapter2/05_Phylogenomics/xFINAL_VCFs_July262024/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_forASTRAl_nodogs_noNAwolvesLadakhPakistanTajWestAsia
-
-vcftools --gzvcf ${VCFnoadmix} --remove ${REMOVEnoadmix} --recode --recode-INFO-all --out ${OUTnoadmix}
-
-
+vcftools --vcf ${DIR}/REVISION_Autosomes_nodogs_withNAwolves_Jan2025_${BEDFILE}.vcf_headerfinal.vcf --remove ${REMOVE} --out ${DIR}/REVISION_Autosomes_nodogs_withNAwolves_Jan2025_${BEDFILE}.vcf_headerfinal_finalsamplelist.vcf --recode --keep-INFO-all
 
 
 
