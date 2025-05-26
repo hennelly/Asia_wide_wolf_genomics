@@ -29,8 +29,12 @@ Scripts for manuscript "Continent-wide view of genomic diversity and divergence 
 ## 04_Phylogenetics
 - Autosomal phylogeny using ASTRAL: -> [01_ASTRAL_filter_VCF.sh](/05_Phylogenomics/01_Autosomes/01_ASTRAL_filter_VCF.sh) + [02_ASTRAL_selectrandom.sh](/05_Phylogenomics/01_Autosomes/02_ASTRAL_selectrandom.sh) + [03_ASTRAL_subset1000regions.sh](/05_Phylogenomics/01_Autosomes/03_ASTRAL_subset1000regions.sh) +  [04_ASTRAL_vcf2phy.sh](/05_Phylogenomics/01_Autosomes/04_ASTRAL_vcf2phy.sh) + [05_ASTRAL_runIQtree.sh](/05_Phylogenomics/01_Autosomes/05_ASTRAL_runIQtree.sh) + [06_ASTRAL_runASTRAL.sh](/05_Phylogenomics/01_Autosomes/06_ASTRAL_runASTRAL.sh)
 
+- X chromosome phylogeny with IQ-tree -> [01_Xchr_runIQtree.sh](/05_Phylogenomics/02_Xchromosome/01_Xchr_runIQtree.sh)
 
+- Low recombination X chromosome phylogeny with IQ-tree -> [01_Phylogenomics_final_chrX_lowrec.sh](/05_Phylogenomics/04_lowrecombination/01_Phylogenomics_final_chrX_lowrec.sh)
+- Low recombination X chromosome phylogeny with no wolves from Pakistan or Indian wolves ->  [03_Phylogenomics_final_chrX_lowrec_noIndian.sh](/05_Phylogenomics/04_lowrecombination/03_Phylogenomics_final_chrX_lowrec_noIndian.sh)
 
+- Low recombination X chromosome phylogeny with no wolves from Pakistan or SW Asian wolves ->  [02_Phylogenomics_final_chrX_lowrec_noSWAsia.sh](/05_Phylogenomics/04_lowrecombination/02_Phylogenomics_final_chrX_lowrec_noSWAsia.sh)
 
 For script-related questions, please email Dr. Lauren Mae Hennelly at lauren.hennelly@sund.ku.dk
 
