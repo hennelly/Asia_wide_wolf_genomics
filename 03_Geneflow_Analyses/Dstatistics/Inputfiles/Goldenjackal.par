@@ -1,1 +1,99 @@
+genotypename:  /projects/psg/people/crq857/Chapter2/03_GeneflowAnalyses/Dstat/files/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss1_Dstat.eigenstratgeno
+snpname: /projects/psg/people/crq857/Chapter2/03_GeneflowAnalyses/Dstat/files/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss1_Dstat.snp
+indivname: /projects/psg/people/crq857/Chapter2/03_GeneflowAnalyses/Dstat/files/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss1_Dstat.ind
+popfilename:   /home/crq857/projects/Asianwolves_revision/files/01_GJ_pops.txt
+## optional parameter  
+f4mode:   YES 
+printsd:  YES
+## default NO 
+## f4 statistics not D-stats are computed
+inbreed: YES
+
+
+
+Wolf_Norway_MW005       Wolf_SaudiArabia        Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Syria      Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_GeneralIran        Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Israel_S21_2743    Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Turkey     Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Chitral_S21_1038   Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Indianwolf_SRR13985171  Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Kolhu_S21_1037     Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Lebanonwolf     Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Iran_Tehran_SRR20326408    Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Iran_Kerman_SRR12009566    Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Waziristan_S21_1041        Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Iran_Hamadan       Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Iran_Tehran_SRR12009567    Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Iran_Hajjiabad     Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Punjab_S21_1039    Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Chitral_S21_1042   Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Iran_Tehran_SRR20326410    Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Indianwolf_BH6  Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_DGKhan_S19_10680   Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Iran_Zanjan        Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Russia_750125      Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Indianwolf_BH123        Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Indianwolf_BH124        Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Indianwolf_BH126        Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Xinjiang_CAN30     Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_RussiaAtlai_GW1    Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Karakoram_S19_10679        Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Germany_MW055      Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Xinjiang_CAN24     Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Russia_GW3 Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Czech_MW045        Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Tajikistan_SRR20326384     Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Tajikistan_SRR20326385     Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Bosnia_MW703A      Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Bulgaria_MW706A    Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Kazakhstan_750114  Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_InnerMongolia_CAN6 Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_MW062_Romania      Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Ukraine_MW707      Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Tajikisan_SRR20326383      Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_InnerMongoliia_CAN7        Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Kazakhstan_SRR20326405     Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Croatia_MW1126     Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Greece_MW1135      Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Tajikistan_SRR20326251     Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Lithuania_MW020    Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_ChukotkaRussia_Wang_GW2    Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Karakoram_S19_10678        Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_China_InnerMong_Wang_GW4   Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Mongolia_MW561     Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Finland_MW347      Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Austria_MW515      Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       China_SRR20326485_Xinjiang      Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf__Kyrgyz180 Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       China_SRR20326483_Xinjiang      Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Kazakhstan_750117  Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_MW486_Russia       Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_China_LiaoNing     Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Kyrgyz179  Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Kazakhstan_750119  Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       China_SRR20326484_Xinjiang      Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Tajikistan_SRR20326382     Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Russia_7502882     Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Kyrgyzstan_SRR20326406     Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Russia_SRR20326403 Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Mongolia_MW574     Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Mongolia_MW588     Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Tibetanwolf_BH1 Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Italy_ItalianWolf_SAMN02921313     Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Russia_SRR20326404 Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Russia_750016      Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Russia_SRR20326388 Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Shanxi2_SAMN03168395       Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Russia_MW538       Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_SierraMorena       Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Tajikistan_SRR20326381     Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Portugal   Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_China_InnerMongoliaWolf    Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Tajikistan_SRR20326250     Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Russia_MW524       Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Russia_SRR20326400 Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       China_SRR20326491_Heilongjiang  Goldenjackal1   Andeanfox
+Wolf_Norway_MW005       Wolf_Russia_SRR20326401 Goldenjackal1   Andeanfox
+
 
