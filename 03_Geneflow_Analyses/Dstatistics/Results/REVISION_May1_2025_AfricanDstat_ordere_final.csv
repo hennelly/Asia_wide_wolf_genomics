@@ -1,0 +1,92 @@
+﻿P1,P2,Population,P3,P4,Dstat,sd,Zscore,Populationgroup,Region,RegionOrdere,Sign
+Wolf_Norway_MW005,Wolf_SaudiArabia,SaudiArabia,Africanwolf ,Andeanfox ,-0.000426,0.000044,-9.607,yes,southwestAsia,a_southwestAsia,yes
+Wolf_Norway_MW005,Wolf_Syria,Syria,Africanwolf,Andeanfox,-0.000328,0.000039,-8.384,yes,southwestAsia,a_southwestAsia,yes
+Wolf_Norway_MW005,Wolf_GeneralIran,Iran,Africanwolf,Andeanfox,-0.000291,0.000035,-8.258,yes,southwestAsia,a_southwestAsia,yes
+Wolf_Norway_MW005,Wolf_Israel_S21_2743,Israel,Africanwolf,Andeanfox,-0.000216,0.000035,-6.121,yes,southwestAsia,a_southwestAsia,yes
+Wolf_Norway_MW005,Wolf_Turkey,Turkey,Africanwolf,Andeanfox,-0.000118,0.00003,-3.942,yes,southwestAsia,a_southwestAsia,yes
+Wolf_Norway_MW005,Wolf_Chitral_S21_1038,Pakistan,Africanwolf,Andeanfox,-0.000121,0.000035,-3.412,yes,Pakistan,b_Pakistan,yes
+Wolf_Norway_MW005,Indianwolf_SRR13985171,Indian,Africanwolf,Andeanfox,-0.000143,0.000046,-3.144,no,Indian,c_Indian,yes
+Wolf_Norway_MW005,Wolf_Kolhu_S21_1037,Pakistan,Africanwolf ,Andeanfox,-0.000116,0.000037,-3.106,yes,Pakistan,b_Pakistan,yes
+Wolf_Norway_MW005,Lebanonwolf,Lebanon,Africanwolf,Andeanfox,-0.000126,0.000042,-3.027,yes,southwestAsia,a_southwestAsia,yes
+Wolf_Norway_MW005,Wolf_Iran_Tehran_SRR20326408,Iran,Africanwolf,Andeanfox,-0.000121,0.00004,-2.993,no,southwestAsia,a_southwestAsia,no
+Wolf_Norway_MW005,Wolf_Iran_Kerman_SRR12009566,Iran,Africanwolf,Andeanfox,-0.000104,0.000036,-2.922,no,southwestAsia,a_southwestAsia,no
+Wolf_Norway_MW005,Wolf_Waziristan_S21_1041,Pakistan,Africanwolf,Andeanfox,-0.000094,0.000035,-2.685,no,Pakistan,b_Pakistan,no
+Wolf_Norway_MW005,Wolf_Iran_Hamadan,Iran,Africanwolf,Andeanfox,-0.000088,0.000034,-2.557,no,southwestAsia,a_southwestAsia,no
+Wolf_Norway_MW005,Wolf_Iran_Tehran_SRR12009567,Iran,Africanwolf,Andeanfox,-0.000087,0.000037,-2.368,no,southwestAsia,a_southwestAsia,no
+Wolf_Norway_MW005,Wolf_Iran_Hajjiabad,Iran,Africanwolf,Andeanfox,-0.00008,0.000036,-2.231,no,southwestAsia,a_southwestAsia,no
+Wolf_Norway_MW005,Wolf_Punjab_S21_1039,Pakistan,Africanwolf ,Andeanfox,-0.000068,0.000035,-1.971,no,Pakistan,b_Pakistan,no
+Wolf_Norway_MW005,Wolf_Chitral_S21_1042,Pakistan,Africanwolf,Andeanfox,-0.000049,0.000033,-1.482,no,Pakistan,b_Pakistan,no
+Wolf_Norway_MW005,Wolf_Iran_Tehran_SRR20326410,Iran,Africanwolf,Andeanfox,-0.000049,0.000033,-1.458,no,southwestAsia,a_southwestAsia,no
+Wolf_Norway_MW005,Indianwolf_BH6,Indian,Africanwolf ,Andeanfox ,-0.00003,0.00004,-0.751,no,Indian,c_Indian,no
+Wolf_Norway_MW005,Wolf_DGKhan_S19_10680,Pakistan,Africanwolf,Andeanfox,-0.000028,0.000039,-0.721,no,Pakistan,b_Pakistan,no
+Wolf_Norway_MW005,Wolf_Iran_Zanjan,Iran,Africanwolf,Andeanfox,-0.000014,0.000038,-0.38,no,southwestAsia,a_southwestAsia,no
+Wolf_Norway_MW005,Wolf_Russia_750125-33D,Russia,Africanwolf ,Andeanfox ,-0.000007,0.000026,-0.267,no,centralAsia,d_centralAsia,no
+Wolf_Norway_MW005,Indianwolf_BH123,Indian,Africanwolf ,Andeanfox ,0.000008,0.000047,0.176,no,Indian,c_Indian,no
+Wolf_Norway_MW005,Indianwolf_BH124,Indian,Africanwolf ,Andeanfox ,0.000034,0.000042,0.807,no,Indian,c_Indian,no
+Wolf_Norway_MW005,Indianwolf_BH126,Indian,Africanwolf ,Andeanfox ,0.000037,0.000044,0.844,no,Indian,c_Indian,no
+Wolf_Norway_MW005,Wolf_Xinjiang_CAN30,China,Africanwolf,Andeanfox,0.000028,0.00003,0.934,no,centralAsia,d_centralAsia,no
+Wolf_Norway_MW005,Wolf_RussiaAtlai_GW1,Russia,Africanwolf ,Andeanfox ,0.000036,0.000029,1.265,no,centralAsia,d_centralAsia,no
+Wolf_Norway_MW005,Wolf_Karakoram_S19_10679,Pakistan,Africanwolf ,Andeanfox ,0.000052,0.000036,1.445,no,Pakistan,b_Pakistan,no
+Wolf_Norway_MW005,Wolf_Xinjiang_CAN24,China,Africanwolf,Andeanfox,0.000061,0.00003,2.032,no,centralAsia,d_centralAsia,no
+Wolf_Norway_MW005,Wolf_Russia_GW3,Russia,Africanwolf ,Andeanfox ,0.000057,0.000027,2.058,no,centralAsia,d_centralAsia,no
+Wolf_Norway_MW005,Wolf_Czech_MW045,Europe,Africanwolf,Andeanfox,0.000069,0.000025,2.743,no,Europe,e_Europe,no
+Wolf_Norway_MW005,Wolf_Tajikistan_SRR20326384,Tajikistan,Africanwolf,Andeanfox,0.000097,0.000033,2.912,no,centralAsia,d_centralAsia,no
+Wolf_Norway_MW005,Wolf_Tajikistan_SRR20326385,Tajikistan,Africanwolf,Andeanfox,0.000109,0.000035,3.133,yesA,centralAsia,d_centralAsia,yesA
+Wolf_Norway_MW005,Wolf_Bosnia_MW703A,Europe,Africanwolf,Andeanfox,0.000085,0.000026,3.276,yes,Europe,e_Europe,yesA
+Wolf_Norway_MW005,Wolf_Bulgaria_MW706A,Europe,Africanwolf,Andeanfox,0.000085,0.000026,3.276,yes,Europe,e_Europe,yesA
+Wolf_Norway_MW005,Wolf_Kazakhstan_750114-25D,Kazakhstan,Africanwolf ,Andeanfox ,0.000095,0.000028,3.411,no,centralAsia,d_centralAsia,yesA
+Wolf_Norway_MW005,Wolf_InnerMongolia_CAN6,China,Africanwolf,Andeanfox,0.000102,0.000029,3.56,yes,easternAsia,x_easternAsia,yesA
+Wolf_Norway_MW005,Wolf_MW062_Romania,Europe,Africanwolf ,Andeanfox ,0.000103,0.000027,3.764,no,Europe,e_Europe,yesA
+Wolf_Norway_MW005,Wolf_Ukraine_MW707,Europe,Africanwolf,Andeanfox,0.000108,0.000028,3.865,yes,Europe,e_Europe,yesA
+Wolf_Norway_MW005,Wolf_Tajikisan_SRR20326383,Tajikistan,Africanwolf,Andeanfox,0.00013,0.000033,3.92,yes,centralAsia,d_centralAsia,yesA
+Wolf_Norway_MW005,Wolf_InnerMongoliia_CAN7,China,Africanwolf,Andeanfox,0.000119,0.000029,4.043,yes,easternAsia,x_easternAsia,yesA
+Wolf_Norway_MW005,Wolf_Kazakhstan_SRR20326405,Kazakhstan,Africanwolf ,Andeanfox ,0.000157,0.000039,4.055,no,centralAsia,d_centralAsia,yesA
+Wolf_Norway_MW005,Wolf_Croatia_MW1126,Europe,Africanwolf,Andeanfox,0.000105,0.000026,4.083,yes,Europe,e_Europe,yesA
+Wolf_Norway_MW005,Wolf_Greece_MW1135,Europe,Africanwolf,Andeanfox,0.000105,0.000026,4.083,yes,Europe,e_Europe,yesA
+Wolf_Norway_MW005,Wolf_Tajikistan_SRR20326251,Tajikistan,Africanwolf,Andeanfox,0.000161,0.000038,4.258,yes,centralAsia,d_centralAsia,yesA
+Wolf_Norway_MW005,Wolf_Lithuania_MW020,Europe,Africanwolf ,Andeanfox ,0.000116,0.000027,4.357,no,Europe,e_Europe,yesA
+Wolf_Norway_MW005,Wolf_ChukotkaRussia_Wang_GW2,Russia,Africanwolf,Andeanfox,0.000114,0.000026,4.36,yes,easternAsia,x_easternAsia,yesA
+Wolf_Norway_MW005,Wolf_Karakoram_S19_10678,Pakistan,Africanwolf,Andeanfox,0.000147,0.000033,4.478,yes,Pakistan,b_Pakistan,yesA
+Wolf_Norway_MW005,Wolf_China_InnerMong_Wang_GW4,China,Africanwolf,Andeanfox,0.000124,0.000028,4.48,yes,easternAsia,x_easternAsia,yesA
+Wolf_Norway_MW005,Wolf_Mongolia_MW561,Mongolia,Africanwolf ,Andeanfox ,0.000132,0.000028,4.742,no,easternAsia,x_easternAsia,yesA
+Wolf_Norway_MW005,Wolf_Finland_MW347,Europe,Africanwolf,Andeanfox,0.00012,0.000025,4.828,yes,Europe,e_Europe,yesA
+Wolf_Norway_MW005,Wolf_Austria_MW515,Europe,Africanwolf,Andeanfox,0.000146,0.000029,5.019,yes,Europe,e_Europe,yesA
+Wolf_Norway_MW005,China_SRR20326485_Xinjiang,China,Africanwolf,Andeanfox,0.000172,0.000034,5.114,yes,centralAsia,d_centralAsia,yesA
+Wolf_Norway_MW005,Wolf__Kyrgyz180,Kyrgyzstan,Africanwolf,Andeanfox,0.000161,0.000031,5.178,yes,centralAsia,d_centralAsia,yesA
+Wolf_Norway_MW005,China_SRR20326483_Xinjiang,China,Africanwolf,Andeanfox,0.000187,0.000036,5.182,yes,centralAsia,d_centralAsia,yesA
+Wolf_Norway_MW005,Wolf_Kazakhstan_750117,Kazakhstan,Africanwolf ,Andeanfox ,0.000141,0.000027,5.272,no,centralAsia,d_centralAsia,yesA
+Wolf_Norway_MW005,Wolf_MW486_Russia,Russia,Africanwolf ,Andeanfox ,0.000142,0.000027,5.294,no,centralAsia,d_centralAsia,yesA
+Wolf_Norway_MW005,Wolf_China_LiaoNing,China,Africanwolf,Andeanfox,0.000156,0.000029,5.328,yes,easternAsia,x_easternAsia,yesA
+Wolf_Norway_MW005,Wolf_Kyrgyz179,Kyrgyzstan,Africanwolf ,Andeanfox ,0.000184,0.000034,5.368,no,centralAsia,d_centralAsia,yesA
+Wolf_Norway_MW005,Wolf_Kazakhstan_750119,Kazakhstan,Africanwolf ,Andeanfox ,0.000137,0.000025,5.403,no,centralAsia,d_centralAsia,yesA
+Wolf_Norway_MW005,China_SRR20326484_Xinjiang,China,Africanwolf,Andeanfox,0.000186,0.000032,5.868,yes,centralAsia,d_centralAsia,yesA
+Wolf_Norway_MW005,Wolf_Tajikistan_SRR20326382,Tajikistan,Africanwolf,Andeanfox,0.000214,0.000036,5.94,yes,centralAsia,d_centralAsia,yesA
+Wolf_Norway_MW005,Wolf_Russia_7502882,Russia,Africanwolf ,Andeanfox ,0.000176,0.000029,6.109,no,centralAsia,d_centralAsia,yesA
+Wolf_Norway_MW005,Wolf_Kyrgyzstan_SRR20326406,Kyrgyzstan,Africanwolf ,Andeanfox ,0.000204,0.000033,6.152,no,centralAsia,d_centralAsia,yesA
+Wolf_Norway_MW005,Wolf_Russia_SRR20326403,Russia,Africanwolf ,Andeanfox ,0.000215,0.000034,6.268,no,centralAsia,d_centralAsia,yesA
+Wolf_Norway_MW005,Wolf_Mongolia_MW574,Mongolia,Africanwolf ,Andeanfox ,0.000176,0.000028,6.387,no,easternAsia,x_easternAsia,yesA
+Wolf_Norway_MW005,Wolf_Mongolia_MW588,Mongolia,Africanwolf ,Andeanfox ,0.000184,0.000029,6.447,no,easternAsia,x_easternAsia,yesA
+Wolf_Norway_MW005,Tibetanwolf_BH1,Ladakh,Africanwolf,Andeanfox,0.00022,0.000034,6.522,yes,Tibetan,z_Tibetan,yesA
+Wolf_Norway_MW005,Wolf_Italy_ItalianWolf_SAMN02921313,Europe,Africanwolf,Andeanfox,0.000187,0.000028,6.585,yes,Europe,e_Europe,yesA
+Wolf_Norway_MW005,Wolf_Russia_SRR20326404,Russia,Africanwolf ,Andeanfox ,0.000229,0.000034,6.665,no,centralAsia,d_centralAsia,yesA
+Wolf_Norway_MW005,Wolf_Russia_750016,Russia,Africanwolf ,Andeanfox ,0.000183,0.000026,7.048,no,centralAsia,d_centralAsia,yesA
+Wolf_Norway_MW005,Wolf_Russia_SRR20326388,Russia,Africanwolf ,Andeanfox ,0.000226,0.000031,7.391,no,centralAsia,d_centralAsia,yesA
+Wolf_Norway_MW005,Wolf_Shanxi2_SAMN03168395,EastChina,Africanwolf ,Andeanfox ,0.000237,0.00003,7.771,no,easternAsia,x_easternAsia,yesA
+Wolf_Norway_MW005,Wolf_Russia_MW538,Russia,Africanwolf ,Andeanfox ,0.00021,0.000027,7.828,no,easternAsia,x_easternAsia,yesA
+Wolf_Norway_MW005,Wolf_SierraMorena,Europe,Africanwolf ,Andeanfox ,0.000274,0.000034,7.982,no,Europe,e_Europe,yesA
+Wolf_Norway_MW005,Wolf_Tajikistan_SRR20326381,Tajikistan,Africanwolf,Andeanfox,0.000315,0.000039,8.094,yes,centralAsia,d_centralAsia,yesA
+Wolf_Norway_MW005,Wolf_Portugal,Europe,Africanwolf ,Andeanfox ,0.000262,0.000032,8.194,no,Europe,e_Europe,yesA
+Wolf_Norway_MW005,Wolf_China_InnerMongoliaWolf,China,Africanwolf,Andeanfox,0.000246,0.00003,8.286,yes,easternAsia,x_easternAsia,yesA
+Wolf_Norway_MW005,Wolf_Tajikistan_SRR20326250,Tajikistan,Africanwolf,Andeanfox,0.000297,0.000036,8.302,yes,centralAsia,d_centralAsia,yesA
+Wolf_Norway_MW005,Wolf_Russia_MW524,Russia,Africanwolf ,Andeanfox ,0.000232,0.000027,8.43,no,centralAsia,d_centralAsia,yesA
+Wolf_Norway_MW005,Wolf_Russia_SRR20326400,Russia,Africanwolf ,Andeanfox ,0.000282,0.000033,8.659,no,centralAsia,d_centralAsia,yesA
+Wolf_Norway_MW005,China_SRR20326491_Heilongjiang,China,Africanwolf,Andeanfox,0.000273,0.000031,8.784,yes,easternAsia,x_easternAsia,yesA
+Wolf_Norway_MW005,Wolf_Russia_SRR20326401,Russia,Africanwolf ,Andeanfox ,0.000304,0.000032,9.465,no,centralAsia,d_centralAsia,yesA
+Wolf_Norway_MW005,Wolf_Qinghai_CAN11,Tibetan,Africanwolf ,Andeanfox ,0.000356,0.000034,10.554,no,Tibetan,z_Tibetan,yesA
+Wolf_Norway_MW005,Tibetanwolf_BH4,Ladakh,Africanwolf,Andeanfox,0.000367,0.000035,10.556,yes,Tibetan,z_Tibetan,yesA
+Wolf_Norway_MW005,Wolf_China_Shanxi1,China,Africanwolf,Andeanfox,0.000357,0.000032,11.309,yes,easternAsia,x_easternAsia,yesA
+Wolf_Norway_MW005,China_SRR20326479_Sichuan,China,Africanwolf,Andeanfox,0.000399,0.000034,11.806,yes,Tibetan,z_Tibetan,yesA
+Wolf_Norway_MW005,Wolf_Qinghai_CAN16,Tibetan,Africanwolf ,Andeanfox ,0.000482,0.000037,13.032,no,Tibetan,z_Tibetan,yesA
+Wolf_Norway_MW005,Wolf_Tibetan_CAN32,Tibetan,Africanwolf,Andeanfox,0.000568,0.000041,13.767,yes,Tibetan,z_Tibetan,yesA
+Wolf_Norway_MW005,Tibetanwolf_MYL_SAMN12565073,Tibetan,Africanwolf,Andeanfox,0.00055,0.000038,14.373,yes,Tibetan,z_Tibetan,yesA
+Wolf_Norway_MW005,Wolf_Tibetan_CAN9A,Tibetan,Africanwolf,Andeanfox,0.000603,0.00004,15.03,yes,Tibetan,z_Tibetan,yesA
