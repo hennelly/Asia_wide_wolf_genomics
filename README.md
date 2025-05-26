@@ -1,8 +1,8 @@
 # Asia_wide_wolf_genomics
-Scripts for manuscript "Complex genomic ancestry in southern regions and drivers of continental-level genetic diversity in the wolves of Asia"
+Scripts for manuscript "Continent-wide view of genomic diversity and divergence in the wolves of Asia"
 
 ## Sample List 
-- Meta-data for the 11 newly sequenced canids, which consisted of 1 dog from Pakistan, whole genomes of 2 wolves from Kyrgyzstan, and 8 reduced representation sequences from Pakistan is avaliable here: [Samplelist](/00_SamplesMetadata/Metadata_Hennelly_etal_2023.xlsx)
+- Meta-data for the 20 newly sequenced canids and the full sample list is avaliable here: [Samplelist](/00_SamplesMetadata/Table S1_Metadata.csv)
 
 ## 01_Alignment_SNPCalling
 - Paleomix pipeline for mapping to canfam3.1 genome -> [01_Alignment_paleomix.sh](/01_Alignment_Postprocessing/01_Alignment_paleomix.sh)
