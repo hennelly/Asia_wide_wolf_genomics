@@ -1,0 +1,118 @@
+﻿Group,Total genetic load,category,highmedlow
+D_CentralAsia,549,ATotal genetic load,HIGH
+B_Indian,518,ATotal genetic load,HIGH
+B_Indian,511,ATotal genetic load,HIGH
+E_SW_Asia,508,ATotal genetic load,HIGH
+E_SW_Asia,566,ATotal genetic load,HIGH
+E_SW_Asia,551,ATotal genetic load,HIGH
+E_SW_Asia,555,ATotal genetic load,HIGH
+AMexican,435,ATotal genetic load,HIGH
+D_CentralAsia,556,ATotal genetic load,HIGH
+C_Tibetan,540,ATotal genetic load,HIGH
+C_Tibetan,527,ATotal genetic load,HIGH
+D_CentralAsia,563,ATotal genetic load,HIGH
+D_CentralAsia,542,ATotal genetic load,HIGH
+D_CentralAsia,15501,ATotal genetic load,MEDIUM
+B_Indian,14379,ATotal genetic load,MEDIUM
+B_Indian,14561,ATotal genetic load,MEDIUM
+E_SW_Asia,15576,ATotal genetic load,MEDIUM
+E_SW_Asia,15558,ATotal genetic load,MEDIUM
+E_SW_Asia,15580,ATotal genetic load,MEDIUM
+E_SW_Asia,15710,ATotal genetic load,MEDIUM
+AMexican,13191,ATotal genetic load,MEDIUM
+D_CentralAsia,15459,ATotal genetic load,MEDIUM
+C_Tibetan,14445,ATotal genetic load,MEDIUM
+C_Tibetan,14158,ATotal genetic load,MEDIUM
+D_CentralAsia,15466,ATotal genetic load,MEDIUM
+D_CentralAsia,15484,ATotal genetic load,MEDIUM
+D_CentralAsia,34429,ATotal genetic load,Z_LOW
+B_Indian,31618,ATotal genetic load,Z_LOW
+B_Indian,31941,ATotal genetic load,Z_LOW
+E_SW_Asia,34271,ATotal genetic load,Z_LOW
+E_SW_Asia,34163,ATotal genetic load,Z_LOW
+E_SW_Asia,34559,ATotal genetic load,Z_LOW
+E_SW_Asia,34369,ATotal genetic load,Z_LOW
+AMexican,30363,ATotal genetic load,Z_LOW
+D_CentralAsia,34235,ATotal genetic load,Z_LOW
+C_Tibetan,31591,ATotal genetic load,Z_LOW
+C_Tibetan,31098,ATotal genetic load,Z_LOW
+D_CentralAsia,34459,ATotal genetic load,Z_LOW
+D_CentralAsia,34563,ATotal genetic load,Z_LOW
+D_CentralAsia,262,Crealized genetic load,HIGH
+B_Indian,389,Crealized genetic load,HIGH
+B_Indian,365,Crealized genetic load,HIGH
+E_SW_Asia,268,Crealized genetic load,HIGH
+E_SW_Asia,279,Crealized genetic load,HIGH
+E_SW_Asia,247,Crealized genetic load,HIGH
+E_SW_Asia,265,Crealized genetic load,HIGH
+AMexican,382,Crealized genetic load,HIGH
+D_CentralAsia,294,Crealized genetic load,HIGH
+C_Tibetan,379,Crealized genetic load,HIGH
+C_Tibetan,413,Crealized genetic load,HIGH
+D_CentralAsia,264,Crealized genetic load,HIGH
+D_CentralAsia,225,Crealized genetic load,HIGH
+D_CentralAsia,9228,Crealized genetic load,MEDIUM
+B_Indian,10976,Crealized genetic load,MEDIUM
+B_Indian,10882,Crealized genetic load,MEDIUM
+E_SW_Asia,9352,Crealized genetic load,MEDIUM
+E_SW_Asia,9284,Crealized genetic load,MEDIUM
+E_SW_Asia,8985,Crealized genetic load,MEDIUM
+E_SW_Asia,9201,Crealized genetic load,MEDIUM
+AMexican,11742,Crealized genetic load,MEDIUM
+D_CentralAsia,9279,Crealized genetic load,MEDIUM
+C_Tibetan,11048,Crealized genetic load,MEDIUM
+C_Tibetan,11438,Crealized genetic load,MEDIUM
+D_CentralAsia,9436,Crealized genetic load,MEDIUM
+D_CentralAsia,9494,Crealized genetic load,MEDIUM
+D_CentralAsia,25056,Crealized genetic load,Z_LOW
+B_Indian,26146,Crealized genetic load,Z_LOW
+B_Indian,25908,Crealized genetic load,Z_LOW
+E_SW_Asia,24529,Crealized genetic load,Z_LOW
+E_SW_Asia,24261,Crealized genetic load,Z_LOW
+E_SW_Asia,24444,Crealized genetic load,Z_LOW
+E_SW_Asia,24444,Crealized genetic load,Z_LOW
+AMexican,28389,Crealized genetic load,Z_LOW
+D_CentralAsia,24831,Crealized genetic load,Z_LOW
+C_Tibetan,26468,Crealized genetic load,Z_LOW
+C_Tibetan,26831,Crealized genetic load,Z_LOW
+D_CentralAsia,25712,Crealized genetic load,Z_LOW
+D_CentralAsia,25772,Crealized genetic load,Z_LOW
+D_CentralAsia,287,Bmasked load,HIGH
+B_Indian,129,Bmasked load,HIGH
+B_Indian,146,Bmasked load,HIGH
+E_SW_Asia,240,Bmasked load,HIGH
+E_SW_Asia,287,Bmasked load,HIGH
+E_SW_Asia,304,Bmasked load,HIGH
+E_SW_Asia,290,Bmasked load,HIGH
+AMexican,53,Bmasked load,HIGH
+D_CentralAsia,262,Bmasked load,HIGH
+C_Tibetan,161,Bmasked load,HIGH
+C_Tibetan,114,Bmasked load,HIGH
+D_CentralAsia,299,Bmasked load,HIGH
+D_CentralAsia,317,Bmasked load,HIGH
+D_CentralAsia,6273,Bmasked load,MEDIUM
+B_Indian,3403,Bmasked load,MEDIUM
+B_Indian,3679,Bmasked load,MEDIUM
+E_SW_Asia,6224,Bmasked load,MEDIUM
+E_SW_Asia,6274,Bmasked load,MEDIUM
+E_SW_Asia,6595,Bmasked load,MEDIUM
+E_SW_Asia,6509,Bmasked load,MEDIUM
+AMexican,1449,Bmasked load,MEDIUM
+D_CentralAsia,6180,Bmasked load,MEDIUM
+C_Tibetan,3397,Bmasked load,MEDIUM
+C_Tibetan,2720,Bmasked load,MEDIUM
+D_CentralAsia,6030,Bmasked load,MEDIUM
+D_CentralAsia,5990,Bmasked load,MEDIUM
+D_CentralAsia,9373,Bmasked load,Z_LOW
+B_Indian,5472,Bmasked load,Z_LOW
+B_Indian,6033,Bmasked load,Z_LOW
+E_SW_Asia,9742,Bmasked load,Z_LOW
+E_SW_Asia,9902,Bmasked load,Z_LOW
+E_SW_Asia,10115,Bmasked load,Z_LOW
+E_SW_Asia,9925,Bmasked load,Z_LOW
+AMexican,1974,Bmasked load,Z_LOW
+D_CentralAsia,9404,Bmasked load,Z_LOW
+C_Tibetan,5123,Bmasked load,Z_LOW
+C_Tibetan,4267,Bmasked load,Z_LOW
+D_CentralAsia,8747,Bmasked load,Z_LOW
+D_CentralAsia,8791,Bmasked load,Z_LOW
