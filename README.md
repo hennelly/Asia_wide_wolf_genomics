@@ -46,7 +46,7 @@ Scripts for manuscript "Continent-wide view of genomic diversity and divergence 
 - Genetic load calculation -> [12_geneticload_calculation.R](/06_Geneticload/12_geneticload_calculation.R) + plotting [13_geneticload_plotting.R](/06_Geneticload/13_geneticload_plotting.R)
 - Purging calculation -> [14_purging_calculation.R](/06_Geneticload/14_purging_calculation.R) +  [15_purging_plotting.R](/06_Geneticload/15_purging_plotting.R)
 
-For script-related questions, please email Dr. Lauren Mae Hennelly at lauren.hennelly@sund.ku.dk
+For script-related questions, please email Dr. Lauren Mae Hennelly at laurenmaehennelly@gmail.com
 
 
 
