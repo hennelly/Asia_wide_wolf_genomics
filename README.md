@@ -27,7 +27,16 @@ Scripts for manuscript "Continent-wide view of genomic diversity and divergence 
 - D statistic -> [01_Dstat_vcf2ped.sh](/03_Geneflow_Analyses/Dstatistics/01_Dstat_vcf2ped.sh) + [02_Dstat_ped2eigen.sh](/03_Geneflow_Analyses/Dstatistics/02_Dstat_ped2eigen.sh) + [03_Dstat_run.sh](/03_Geneflow_Analyses/Dstatistics/03_Dstat_run.sh) + [04_plotMap_Dstat.R](/03_Geneflow_Analyses/Dstatistics/04_plotMap_Dstat.R) + [04_plot_boxplot.R](/03_Geneflow_Analyses/Dstatistics/04_plot_boxplot.R)
   
 ## 04_Phylogenetics
-- Still updating
+- Autosomal phylogeny using ASTRAL: -> [01_ASTRAL_filter_VCF.sh](/05_Phylogenomics
+/01_Autosomes/01_ASTRAL_filter_VCF.sh) + [02_ASTRAL_selectrandom.sh](/05_Phylogenomics
+/01_Autosomes/02_ASTRAL_selectrandom.sh) + [03_ASTRAL_subset1000regions.sh](/05_Phylogenomics
+/01_Autosomes/03_ASTRAL_subset1000regions.sh) +  [04_ASTRAL_vcf2phy.sh](/05_Phylogenomics
+/01_Autosomes/04_ASTRAL_vcf2phy.sh) + [05_ASTRAL_runIQtree.sh](/05_Phylogenomics
+/01_Autosomes/05_ASTRAL_runIQtree.sh) + [06_ASTRAL_runASTRAL.sh](/05_Phylogenomics
+/01_Autosomes/06_ASTRAL_runASTRAL.sh)
+
+
+
 
 For script-related questions, please email Dr. Lauren Mae Hennelly at lauren.hennelly@sund.ku.dk
 
