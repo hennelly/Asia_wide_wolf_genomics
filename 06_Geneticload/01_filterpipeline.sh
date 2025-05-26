@@ -36,3 +36,29 @@ vcftools --vcf ${OUTx}.recode.vcf --indv Dhole_BerlinZoo --recode --recode-INFO-
 
 #vcf for Andean fox 
 vcftools --vcf ${OUTx}.recode.vcf --indv AndeanFox --recode --recode-INFO-all --out ${OUTa}
+
+#fix ID
+
+module load perl
+module load gsl/2.5
+module load bcftools
+
+VCF=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_geneticload.recode.vcf
+OUT=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_geneticload_WOLVES_ID.vcf
+
+bcftools annotate --set-id '%CHROM\_%POS' ${VCF} -o ${OUT}
+
+VCFw=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/Geneticload_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_maxmiss1_minD4_onlywolf.recode.vcf
+OUTw=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/Geneticload_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_maxmiss1_minD4_onlywolf_ID.vcf
+
+bcftools annotate --set-id '%CHROM\_%POS' ${VCFw} -o ${OUTw}
+
+SNPLIST=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/Geneticload_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_maxmiss1_minD4_onlywolf_Apr10.recode.vcf
+OUT2=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/Geneticload_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_maxmiss1_minD4_onlywolf_Apr10_id.vcf
+
+bcftools annotate --set-id '%CHROM\_%POS' ${SNPLIST} -o ${OUT2}
+
+VCF=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_geneticload.recode.vcf
+OUT=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/Autosomes_filtered_noindels_noastrick_diploid_minQ30_biallelic_maxmiss0.9_geneticload_ID.vcf
+
+bcftools annotate --set-id '%CHROM\_%POS' ${VCF} -o ${OUT}
