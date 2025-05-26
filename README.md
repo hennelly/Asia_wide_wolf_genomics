@@ -35,6 +35,16 @@ Scripts for manuscript "Continent-wide view of genomic diversity and divergence 
 - Low recombination X chromosome phylogeny with no wolves from Pakistan or Indian wolves ->  [03_Phylogenomics_final_chrX_lowrec_noIndian.sh](/05_Phylogenomics/04_lowrecombination/03_Phylogenomics_final_chrX_lowrec_noIndian.sh)
 
 - Low recombination X chromosome phylogeny with no wolves from Pakistan or SW Asian wolves ->  [02_Phylogenomics_final_chrX_lowrec_noSWAsia.sh](/05_Phylogenomics/04_lowrecombination/02_Phylogenomics_final_chrX_lowrec_noSWAsia.sh)
+- Low recombination autosomal phylogeny -> [04_Phylogenomics_lowrecombination_autosomes.sh](/05_Phylogenomics/04_lowrecombination/04_Phylogenomics_lowrecombination_autosomes.sh)
+
+## 05_Genetic_load 
+
+- Preparing the dataset -> depth filter and extract SNP positions where Andean fox and dhole have calls [01_filterpipeline.sh](/06_Geneticload/01_filterpipeline.sh) + run snpeff [02_snpeff.sh](/06_Geneticload/02_snpeff.sh) + obtain VCF for each wolf and outgroups [03_ancestralallele.sh](/06_Geneticload/03_ancestralallele.sh) 
+- Obtain invariant sites for outgroup calls [04_gatk_call_Andeanfox_dhole.sh](/06_Geneticload/04_gatk_call_Andeanfox_dhole.sh) + [05_gatk_import_Andeanfox_dhole.sh](/06_Geneticload/05_gatk_import_Andeanfox_dhole.sh)
+- Assign ancestral allele based on Andean fox and dhole calls [06_assign_ancestral.sh](/06_Geneticload/06_assign_ancestral.sh) +  [07_polarize.sh](/06_Geneticload/07_polarize.sh)
+- Prepare dataset for genetic load analysis [08_extractSNPeff.sh](/06_Geneticload/08_extractSNPeff.sh) + [09_addID.sh](/06_Geneticload/09_addID.sh) + [10_assesspurging.sh](/06_Geneticload/10_assesspurging.sh) + [11_nomissingdata.sh](/06_Geneticload/11_nomissingdata.sh)
+- Genetic load calculation -> [12_geneticload_calculation.R](/06_Geneticload/12_geneticload_calculation.R) + plotting [13_geneticload_plotting.R](/06_Geneticload/13_geneticload_plotting.R)
+- Purging calculation -> [14_purging_calculation.R](/06_Geneticload/14_purging_calculation.R) +  [15_purging_plotting.R](/06_Geneticload/15_purging_plotting.R)
 
 For script-related questions, please email Dr. Lauren Mae Hennelly at lauren.hennelly@sund.ku.dk
 
