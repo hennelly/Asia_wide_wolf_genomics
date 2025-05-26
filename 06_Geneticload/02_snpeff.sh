@@ -14,3 +14,15 @@ OUT=/projects/mjolnir1/people/crq857/Chapter2/07_Geneticload/datasets/Focalwolve
 CONFIG=/home/crq857/projects/reproductivegenes/scripts/snpEff_copy.config
 
 java -Xmx8g -jar /projects/mjolnir1/apps/snpeff-5.1d/snpEff.jar -c ${CONFIG} -v CanFam3.1.99 ${VCF} > ${OUT}
+
+#################################################################
+## Extract snps with no missing data for genetic load analysis ##
+#################################################################
+module load perl
+module load vcftools
+#extract SNPs
+SNPS=/projects/mjolnir1/people/crq857/Chapter2/00_Alignment/05_GenotypeGATK/snp.list.nomissing
+OUTd=/projects/mjolnir1/people/crq857/Chapter2/07_Geneticload/datasets/Focalwolves_geneticload_ID.vcf
+OUTx=/projects/mjolnir1/people/crq857/Chapter2/07_Geneticload/datasets/Focalwolves_geneticload_ID_nomissing
+#keep only snps in focal wolf pop
+vcftools --vcf ${OUTd} --snps ${SNPS} --recode --recode-INFO-all --out ${OUTx}
