@@ -135,8 +135,8 @@ Options:
 
 Prefixes:
   CanFam31:
-    Path: /projects/mjolnir1/people/crq857/Chapter2/ref/canFam31.fasta
-Kazakhstan_SRR20326405:
-  Kazakhstan_SRR20326405:
+    Path: /projects/psg/people/crq857/Chapter2/ref/canFam31.fasta
+China_Sichuan_again_SRR20326479:
+  China_Sichuan_again_SRR20326479:
     Lib1:
-      Lane1: /projects/mjolnir1/data/user_owned_folders/Shyam_sharing/fastq/from_publication/dogs10K/Kazakhstan_SRR20326405/SRR20326405_{Pair}.fastq.gz
+      Lane1: /projects/psg/people/crq857/Chapter2/fastq/SRR20326479_{Pair}.fastq.gz
