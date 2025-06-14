@@ -1,14 +1,20 @@
 #!/usr/bin/env bash
-#SBATCH --job-name=merge
+#SBATCH --job-name=PCA
 #SBATCH -c 1
-#SBATCH --time 5:00:00
-#SBATCH --mem-per-cpu 1G
-#SBATCH -o /home/crq857/projects/Geneflow_Dogs/slurmout/merge.out
-#SBATCH -e /home/crq857/projects/Geneflow_Dogs/slurmout/merge.err
+#SBATCH --time 12:00:00
+#SBATCH --mem-per-cpu 10G
+#SBATCH -o /home/crq857/projects/Asianwolves_revision/slurmout/combine.out
+#SBATCH -e /home/crq857/projects/Asianwolves_revision/slurmout/combine.err
+#SBATCH --array=1-38%5
 
-cp Asianwolves_PCAdmix_Dec26_chr1.beagle.gz Asianwolves_PCAdmix_Dec26_autosomes.beagle.gz
+cp Asianwolves_PCAdmix_June2025_chr1.beagle.gz Asianwolves_PCAdmix_June2025_autosomes.beagle.gz
 
 for CHR in `seq 2 38`
 do
-  gunzip -c Asianwolves_PCAdmix_Dec26_chr${CHR}.beagle.gz | sed 1d | gzip -c
-done >> Asianwolves_PCAdmix_Dec26_autosomes.beagle.gz
+  gunzip -c Asianwolves_PCAdmix_June2025_chr${CHR}.beagle.gz | sed 1d | gzip -c
+done >> Asianwolves_PCAdmix_June2025_autosomes.beagle.gz
+
+
+
+
+
