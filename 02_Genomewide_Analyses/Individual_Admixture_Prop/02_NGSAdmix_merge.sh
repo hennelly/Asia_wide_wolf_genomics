@@ -15,3 +15,6 @@ done >> Graywolves_June12_2025_NGSAdmix_autosomes.beagle.gz
 
 
 
+
+
+
