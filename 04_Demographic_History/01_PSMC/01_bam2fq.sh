@@ -24,9 +24,6 @@ module load bcftools
 bcftools mpileup -q 20 -Q 20 -C 50 -f ${REF} ${DIR}/${BAM}  | bcftools call -c | vcfutils.pl vcf2fq -d ${MIND} -D ${MAXD} | gzip > ${OUTDIR}/${BAM}.fq.gz 
 
 
-Shanxi1Wolf.CanFam31.realigned.bam_autosomes.bam /projects/mjolnir1/people/crq857/Chapter2/bams_auto 3.70662 24.7108
-
-
 
 
 #!/usr/bin/env bash
